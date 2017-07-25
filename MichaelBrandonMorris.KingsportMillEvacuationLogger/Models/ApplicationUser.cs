@@ -9,5 +9,22 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
     // Add profile data for application users by adding properties to the ApplicationUser class
     public class ApplicationUser : IdentityUser
     {
+        public UserEvacuationStatus Status
+        {
+            get;
+            set;
+        }
+
+        public string FirstName
+        {
+            get;
+            set;
+        }
+
+        public string LastName
+        {
+            get;
+            set;
+        }
     }
 }

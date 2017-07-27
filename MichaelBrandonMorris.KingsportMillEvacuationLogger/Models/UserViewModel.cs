@@ -1,33 +1,19 @@
 ﻿namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
 {
-    public enum UserEvacuationStatus
+    public class UserViewModel
     {
-        Missing,
-        Here,
-        Away,
-        Inactive
-    }
-
-    public class UserEvacuationStatusViewModel
-    {
-        public UserEvacuationStatusViewModel()
+        public UserViewModel()
         {
         }
 
-        public UserEvacuationStatusViewModel(User user)
+        public UserViewModel(User user)
         {
-            if (user == null)
-            {
-                return;
-            }
-
             Department = user.Department;
             Email = user.Email;
             FirstName = user.FirstName;
+            Id = user.Id;
             LastName = user.LastName;
             PhoneNumber = user.PhoneNumber;
-            Status = user.Status;
-            Id = user.Id;
         }
 
         public string Department
@@ -42,13 +28,13 @@
             set;
         }
 
-        public string PhoneNumber
+        public string FirstName
         {
             get;
             set;
         }
 
-        public string FirstName
+        public string Id
         {
             get;
             set;
@@ -60,13 +46,7 @@
             set;
         }
 
-        public UserEvacuationStatus Status
-        {
-            get;
-            set;
-        }
-
-        public string Id
+        public string PhoneNumber
         {
             get;
             set;

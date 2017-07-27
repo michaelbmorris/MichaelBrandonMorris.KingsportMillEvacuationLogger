@@ -1,22 +1,49 @@
-﻿@model System.Collections.Generic.IList<UserEvacuationStatusViewModel>
+﻿@model IList<UserEvacuationStatusViewModel>
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <form asp-action="Index">
-    <table>
+    <table class="table"
+           id="evacuationStatusTable">
         <thead>
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>Department</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model)
+            @for (var i = 0; i < Model.Count; i++)
             {
-                // TODO implement status selection per user.
+                <tr class=@(Model[i].Status == UserEvacuationStatus.Missing ? "bg-danger" : Model[i].Status == UserEvacuationStatus.Here ? "bg-success" : "bg-muted") id="@i">
+                    <td>
+                        @Html.HiddenFor(model => Model[i].Id)
+                        @Model[i].FirstName
+                    </td>
+                    <td>
+                        @Model[i].LastName
+                    </td>
+                    <td>
+                        @Model[i].PhoneNumber
+                    </td>
+                    <td>
+                        @Model[i].Department
+                    </td>
+                    <td>
+                        <label>@Html.RadioButtonFor(model => Model[i].Status, UserEvacuationStatus.Here) Here</label>
+                        <label>@Html.RadioButtonFor(model => Model[i].Status, UserEvacuationStatus.Away) Away</label>
+                    </td>
+                </tr>
             }
         </tbody>
     </table>
+    <input type="submit" id="evacuationStatusSubmit" value="Submit"/>
 </form>
+
+@section Scripts
+{
+}

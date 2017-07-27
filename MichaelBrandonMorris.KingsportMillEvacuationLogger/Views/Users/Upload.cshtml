@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Upload";
+    Layout = "_Layout";
+}
+
+<form asp-action="Upload" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <input type="submit" value="upload"/>
+</form>

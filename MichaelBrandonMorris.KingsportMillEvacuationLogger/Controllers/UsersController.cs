@@ -8,6 +8,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Diagnostics;
+using Microsoft.Extensions.Options;
 
 namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
 {
@@ -18,9 +22,28 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             get;
         }
 
-        public UsersController(ApplicationDbContext db)
+        private ActiveDirectoryColumnMapping ActiveDirectoryColumnMapping
+        {
+            get;
+        }
+
+        private UserManager<User> UserManager
+        { get; }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UsersController"/> class.
+        /// </summary>
+        /// <param name="db">The database.</param>
+        /// <param name="activeDirectoryColumnMapping">The active directory column mapping.</param>
+        /// <param name="userManager">The user manager.</param>
+        /// TODO Edit XML Comment Template for #ctor
+        public UsersController(ApplicationDbContext db, IOptions<ActiveDirectoryColumnMapping> activeDirectoryColumnMapping, UserManager<User> userManager)
         {
             Db = db;
+            ActiveDirectoryColumnMapping = activeDirectoryColumnMapping.Value;
+
+            Debug.WriteLine(ActiveDirectoryColumnMapping.Email);
+            UserManager = userManager;
         }
 
         public IActionResult Create()
@@ -49,17 +72,61 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Uploads the specified file.
+        /// </summary>
+        /// <param name="file">The file.</param>
+        /// <returns>Task&lt;IActionResult&gt;.</returns>
+        /// TODO Edit XML Comment Template for Upload
         [HttpPost]
-        public IActionResult Upload(IFormFile file)
+        public async Task<IActionResult> Upload(IFormFile file)
         {
             if (file == null)
             {
                 return View();
             }
 
-            if (file.FileName.EndsWith(".csv"))
+            string json;
+
+            using (var stream = file.OpenReadStream())
+            using(var streamReader = new StreamReader(stream))
             {
+                json = streamReader.ReadToEnd();
             }
+
+            var data = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(json);
+
+            foreach(var item in data)
+            {
+                var user = new User
+                {
+                    Email = item[ActiveDirectoryColumnMapping.Email],
+                    FirstName = item[ActiveDirectoryColumnMapping.FirstName],
+                    LastName = item[ActiveDirectoryColumnMapping.LastName],
+                    PhoneNumber = item[ActiveDirectoryColumnMapping.PhoneNumber],
+                    Department = item[ActiveDirectoryColumnMapping.Department],
+                    IsActive = item[ActiveDirectoryColumnMapping.IsActive].Equals("True", System.StringComparison.OrdinalIgnoreCase),
+                    UserName = item[ActiveDirectoryColumnMapping.Email]
+                };
+
+                if(user.Email == null)
+                {
+                    continue;
+                }
+
+                var currentUser = await UserManager.FindByEmailAsync(user.Email);
+
+                if(currentUser == null && user.IsActive)
+                {
+                    await UserManager.CreateAsync(user);
+                }
+                else if(currentUser != null)
+                {
+                    await UserManager.UpdateAsync(user);
+                }
+            }
+
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> Delete(string id)

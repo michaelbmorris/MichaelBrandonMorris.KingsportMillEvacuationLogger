@@ -27,5 +27,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
             get;
             set;
         }
+
+        public bool IsActive { get; set; }
     }
 }

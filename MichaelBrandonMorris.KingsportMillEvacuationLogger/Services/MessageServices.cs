@@ -80,7 +80,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Services
             var msg = new SendGridMessage
             {
                 From = new EmailAddress(
-                    "noreply@kingsportmill.com",
+                    "evacuationlogger@kingsportmill.com",
                     "Kingsport Mill Evacuation Logger"),
                 Subject = subject,
                 PlainTextContent = message,

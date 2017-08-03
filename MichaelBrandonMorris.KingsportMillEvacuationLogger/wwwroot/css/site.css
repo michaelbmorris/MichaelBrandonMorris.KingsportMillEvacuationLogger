@@ -49,9 +49,13 @@ textarea {
     }
 }
 
-#evacuationStatusSubmit {
+#refreshButton {
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 0;
+    right: 0;
     z-index: 99;
+}
+
+.bg-muted {
+    background-color: #f7f7f7;
 }

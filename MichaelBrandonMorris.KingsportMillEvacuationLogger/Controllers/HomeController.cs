@@ -1,72 +1,114 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
-using MichaelBrandonMorris.KingsportMillEvacuationLogger.Data;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
 {
+    /// <summary>
+    ///     Class HomeController.
+    /// </summary>
+    /// <seealso cref="Controller" />
     public class HomeController : Controller
     {
-        public HomeController(ApplicationDbContext db)
+        /// <summary>
+        ///     Initializes a new instance of the
+        ///     <see cref="HomeController" /> class.
+        /// </summary>
+        /// <param name="userManager">The user manager.</param>
+        /// TODO Edit XML Comment Template for #ctor
+        public HomeController(UserManager<User> userManager)
         {
-            Db = db;
+            UserManager = userManager;
         }
 
-        private ApplicationDbContext Db
+        /// <summary>
+        /// Gets the user manager.
+        /// </summary>
+        /// <value>The user manager.</value>
+        /// TODO Edit XML Comment Template for UserManager
+        private UserManager<User> UserManager
         {
             get;
         }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
+        /// <summary>
+        ///     Errors this instance.
+        /// </summary>
+        /// <returns>IActionResult.</returns>
+        /// TODO Edit XML Comment Template for Error
         public IActionResult Error()
         {
             return View();
         }
 
+        /// <summary>
+        ///     Indexes this instance.
+        /// </summary>
+        /// <returns>IActionResult.</returns>
+        /// TODO Edit XML Comment Template for Index
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var model = Db.Users.ToList()
-                .Select(user => new UserEvacuationStatusViewModel(user))
-                .Where(user => user.Status != UserEvacuationStatus.Inactive)
-                .OrderBy(user => user.Status)
+            var model = (await UserManager.Users.ToListAsync())
+                .Where(user => user.IsActive)
+                .Select(user => new UserViewModel(user));
+
+            model = model.OrderBy(user => user.Status)
                 .ThenBy(user => user.Department)
                 .ThenBy(user => user.LastName)
-                .ThenBy(user => user.FirstName)
-                .ToList();
+                .ThenBy(user => user.FirstName);
 
-            return View(model);
+            return View(model.ToList());
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Index(
-            IList<UserEvacuationStatusViewModel> model)
+        [HttpGet]
+        public ActionResult Reset()
         {
-            foreach (var item in model)
+            return View();
+        }
+
+        /// <summary>
+        /// Resets this instance.
+        /// </summary>
+        /// <returns>Task&lt;ActionResult&gt;.</returns>
+        /// TODO Edit XML Comment Template for Reset
+        [ActionName("Reset")]
+        [HttpPost]
+        public async Task<ActionResult> ResetConfirmed()
+        {
+            foreach (var user in await UserManager.Users.ToListAsync())
             {
-                Debug.WriteLine(item.Id);
-                Debug.WriteLine(item.Status);
-                Db.UpdateUserStatus(item);
+                user.Status = UserEvacuationStatus.Unknown;
+                await UserManager.UpdateAsync(user);
             }
 
-            await Db.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+        /// <summary>
+        /// Updates the status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="status">The status.</param>
+        /// <returns>Task&lt;ActionResult&gt;.</returns>
+        /// TODO Edit XML Comment Template for UpdateStatus
+        [HttpPost]
+        public async Task<ActionResult> UpdateStatus(
+            string id,
+            UserEvacuationStatus status)
+        {
+            var user = await UserManager.FindByIdAsync(id);
+            user.Status = status;
+            var result = await UserManager.UpdateAsync(user);
+
+            return Json(
+                new
+                {
+                    failure = !result.Succeeded
+                });
         }
     }
 }

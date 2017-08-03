@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +11,7 @@ using MichaelBrandonMorris.KingsportMillEvacuationLogger.Data;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Models;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Services;
 using Microsoft.AspNetCore.Identity;
+using NonFactors.Mvc.Grid;
 
 namespace MichaelBrandonMorris.KingsportMillEvacuationLogger
 {
@@ -69,6 +68,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
+            services.AddMvcGrid();
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
             services.Configure<AuthMessageSenderOptions>(Configuration);

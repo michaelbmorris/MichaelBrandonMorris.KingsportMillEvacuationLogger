@@ -1,49 +1,49 @@
-﻿@model IList<UserEvacuationStatusViewModel>
+﻿@model IList<UserViewModel>
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<form asp-action="Index">
-    <table class="table"
-           id="evacuationStatusTable">
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Phone Number</th>
-                <th>Department</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            @for (var i = 0; i < Model.Count; i++)
-            {
-                <tr class=@(Model[i].Status == UserEvacuationStatus.Missing ? "bg-danger" : Model[i].Status == UserEvacuationStatus.Here ? "bg-success" : "bg-muted") id="@i">
-                    <td>
-                        @Html.HiddenFor(model => Model[i].Id)
-                        @Model[i].FirstName
-                    </td>
-                    <td>
-                        @Model[i].LastName
-                    </td>
-                    <td>
-                        @Model[i].PhoneNumber
-                    </td>
-                    <td>
-                        @Model[i].Department
-                    </td>
-                    <td>
-                        <label>@Html.RadioButtonFor(model => Model[i].Status, UserEvacuationStatus.Here) Here</label>
-                        <label>@Html.RadioButtonFor(model => Model[i].Status, UserEvacuationStatus.Away) Away</label>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-    <input type="submit" id="evacuationStatusSubmit" value="Submit"/>
-</form>
+<h2>Evacuation Log</h2>
+
+@Html.Grid(Model).Build(columns =>
+{
+    columns.Add(model => model.Status).Titled("Status").RenderedAs(model => $"<label><input type=\"radio\" name=\"{model.Id}\" value=\"Here\"{(model.Status == UserEvacuationStatus.Here ? " checked" : "")}> Here</label> <label><input type=\"radio\" name=\"{model.Id}\" value=\"Away\"{(model.Status == UserEvacuationStatus.Away ? " checked" : "")}> Away</label> <label><input type=\"radio\" name=\"{model.Id}\" value=\"Missing\"{(model.Status == UserEvacuationStatus.Missing ? " checked" : "")}> Missing</label>").Encoded(false).Filterable(false).Sortable(false);
+    columns.Add(model => model.LastName).Titled("Last Name");
+    columns.Add(model => model.FirstName).Titled("First Name");
+    columns.Add(model => model.Department).Titled("Department");
+    columns.Add(model => model.PhoneNumber).Titled("Phone Number");
+}).Filterable().Sortable().RowCss(model => model.Status == UserEvacuationStatus.Unknown ? "bg-warning" : model.Status == UserEvacuationStatus.Here ? "bg-success" : model.Status == UserEvacuationStatus.Away ? "bg-muted" : "bg-danger")
+
+<hr />
+<h2 class="text-danger">Danger</h2>
+<a asp-action="Reset" class="btn btn-danger form-control">Reset</a>
+
+<button class="btn btn-success form-control" id="refreshButton">Refresh</button>
 
 @section Scripts
 {
+    <script type="text/javascript">
+        $("input[type=\"radio\"]").click(function() {
+            $.ajax({
+                url: "@Url.Action("UpdateStatus")",
+                type: "POST",
+                data: {
+                    id: $(this).attr("name"),
+                    status: $(this).val()
+                },
+                failure: function (data) {
+                    if(data.failure) alert("Operation failed.");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $("#refreshButton").on('click', function () {
+            $('.mvc-grid').mvcgrid({
+                reload: true
+            });
+        })
+    </script>
 }

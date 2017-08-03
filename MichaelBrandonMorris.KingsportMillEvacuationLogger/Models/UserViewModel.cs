@@ -12,8 +12,10 @@
             Email = user.Email;
             FirstName = user.FirstName;
             Id = user.Id;
+            IsActive = user.IsActive;
             LastName = user.LastName;
             PhoneNumber = user.PhoneNumber;
+            Status = user.Status;
         }
 
         public string Department
@@ -40,6 +42,12 @@
             set;
         }
 
+        public bool IsActive
+        {
+            get;
+            set;
+        }
+
         public string LastName
         {
             get;
@@ -47,6 +55,12 @@
         }
 
         public string PhoneNumber
+        {
+            get;
+            set;
+        }
+
+        public UserEvacuationStatus Status
         {
             get;
             set;

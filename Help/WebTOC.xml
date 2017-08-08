@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="612fa374-ef43-4405-978c-09385736e14f" Title="MichaelBrandonMorris.KingsportMillEvacuationLogger Namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.htm">
+    <HelpTOCNode Id="96031e3c-4a88-460b-922d-a48dfdb61947" Title="ActiveDirectoryColumnMapping Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm">
+      <HelpTOCNode Title="ActiveDirectoryColumnMapping Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+      <HelpTOCNode Title="ActiveDirectoryColumnMapping Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+      <HelpTOCNode Id="98a4123b-1f75-433b-bfa3-b2f180c09d30" Title="ActiveDirectoryColumnMapping Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm">
+        <HelpTOCNode Title="Department Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.Department.htm" />
+        <HelpTOCNode Title="DepartmentPrefix Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.DepartmentPrefix.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.Email.htm" />
+        <HelpTOCNode Title="FirstName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.FirstName.htm" />
+        <HelpTOCNode Title="IsActive Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.IsActive.htm" />
+        <HelpTOCNode Title="LastName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.LastName.htm" />
+        <HelpTOCNode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.PhoneNumber.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2ead4e49-bc6c-42c6-8973-d107443f3c8a" Title="Program Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm">
+      <HelpTOCNode Title="Program Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm" />
+      <HelpTOCNode Id="cd0f4294-f2d3-44de-8da1-3a77424731e6" Title="Program Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm">
+        <HelpTOCNode Title="Main Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.Main.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="26d86788-7665-49a9-a6a9-7e05a0f40ac1" Title="Startup Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm">
+      <HelpTOCNode Title="Startup Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm" />
+      <HelpTOCNode Title="Startup Constructor " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.-ctor.htm" />
+      <HelpTOCNode Id="ca917f29-0141-4512-8a59-1f62a612cf69" Title="Startup Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm">
+        <HelpTOCNode Title="Configure Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.Configure.htm" />
+        <HelpTOCNode Title="ConfigureServices Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.ConfigureServices.htm" />
+        <HelpTOCNode Title="CreateRolesAndUser Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.CreateRolesAndUser.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9fd30fac-7975-46dd-98fd-32a3a0728410" Title="Startup Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm">
+        <HelpTOCNode Title="Configuration Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.Configuration.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="2d829c8b-2e23-4009-80c2-1d9748bddc2c" Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers Namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.htm">
+    <HelpTOCNode Id="303ae650-0143-477b-8957-7749fd706241" Title="AccountController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm">
+      <HelpTOCNode Title="AccountController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+      <HelpTOCNode Title="AccountController Constructor " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.-ctor.htm" />
+      <HelpTOCNode Id="e7307c4f-74f9-4880-9dda-9a2bf26c7d42" Title="AccountController Fields" Url="html/Fields.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm">
+        <HelpTOCNode Title="_emailSender Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._emailSender.htm" />
+        <HelpTOCNode Title="_externalCookieScheme Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._externalCookieScheme.htm" />
+        <HelpTOCNode Title="_logger Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._logger.htm" />
+        <HelpTOCNode Title="_signInManager Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._signInManager.htm" />
+        <HelpTOCNode Title="_smsSender Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._smsSender.htm" />
+        <HelpTOCNode Title="_userManager Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._userManager.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6b0802da-6c2e-4d83-a259-1cd4163c4f71" Title="AccountController Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm">
+        <HelpTOCNode Title="AccessDenied Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.AccessDenied.htm" />
+        <HelpTOCNode Title="AddErrors Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.AddErrors.htm" />
+        <HelpTOCNode Title="ConfirmEmail Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ConfirmEmail.htm" />
+        <HelpTOCNode Title="ExternalLogin Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ExternalLogin.htm" />
+        <HelpTOCNode Title="ExternalLoginCallback Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ExternalLoginCallback.htm" />
+        <HelpTOCNode Title="ExternalLoginConfirmation Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ExternalLoginConfirmation.htm" />
+        <HelpTOCNode Id="571f18c0-3cc4-4aac-8058-1483ec0fac35" Title="ForgotPassword Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ForgotPassword.htm">
+          <HelpTOCNode Title="ForgotPassword Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ForgotPassword.htm" />
+          <HelpTOCNode Title="ForgotPassword Method (ForgotPasswordViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ForgotPassword_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ForgotPasswordConfirmation Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ForgotPasswordConfirmation.htm" />
+        <HelpTOCNode Id="8829646a-b16d-4968-b2ed-a7fb5d814387" Title="Login Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Login.htm">
+          <HelpTOCNode Title="Login Method (String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Login.htm" />
+          <HelpTOCNode Title="Login Method (LoginViewModel, String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Login_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Logout Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Logout.htm" />
+        <HelpTOCNode Title="RedirectToLocal Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.RedirectToLocal.htm" />
+        <HelpTOCNode Id="a16db650-58bd-4648-92fd-e3093b023c19" Title="Register Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Register.htm">
+          <HelpTOCNode Title="Register Method (String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Register.htm" />
+          <HelpTOCNode Title="Register Method (RegisterViewModel, String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Register_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="3f6da44a-3754-475b-9c02-e4652117a243" Title="ResetPassword Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ResetPassword.htm">
+          <HelpTOCNode Title="ResetPassword Method (String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ResetPassword.htm" />
+          <HelpTOCNode Title="ResetPassword Method (ResetPasswordViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ResetPassword_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ResetPasswordConfirmation Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ResetPasswordConfirmation.htm" />
+        <HelpTOCNode Id="971e7092-a91a-4c1d-a8a5-0ab393494795" Title="SendCode Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.SendCode.htm">
+          <HelpTOCNode Title="SendCode Method (String, Boolean)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.SendCode.htm" />
+          <HelpTOCNode Title="SendCode Method (SendCodeViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.SendCode_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="39c8ec14-8e48-4371-8e19-8a785bc0154b" Title="VerifyCode Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.VerifyCode.htm">
+          <HelpTOCNode Title="VerifyCode Method (String, Boolean, String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.VerifyCode.htm" />
+          <HelpTOCNode Title="VerifyCode Method (VerifyCodeViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.VerifyCode_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="AccountController Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="273df507-43c9-47c9-8f7f-b4426195dd41" Title="HomeController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm">
+      <HelpTOCNode Title="HomeController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm" />
+      <HelpTOCNode Title="HomeController Constructor " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.-ctor.htm" />
+      <HelpTOCNode Id="a6eebcdb-27da-4bf4-97d9-e1447688e4e6" Title="HomeController Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm">
+        <HelpTOCNode Title="Error Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Error.htm" />
+        <HelpTOCNode Title="Index Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Index.htm" />
+        <HelpTOCNode Title="Reset Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Reset.htm" />
+        <HelpTOCNode Title="ResetConfirmed Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.ResetConfirmed.htm" />
+        <HelpTOCNode Title="UpdateStatus Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.UpdateStatus.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="aee69e5e-7c8f-443f-b621-2bc475a250d3" Title="HomeController Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm">
+        <HelpTOCNode Title="UserManager Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.UserManager.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bd1705b5-472f-417e-b6f1-fc86ce739d5d" Title="ManageController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm">
+      <HelpTOCNode Title="ManageController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+      <HelpTOCNode Title="ManageController Constructor " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.-ctor.htm" />
+      <HelpTOCNode Id="23000366-c5d5-41d8-9d80-f0f313a1f15d" Title="ManageController Fields" Url="html/Fields.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm">
+        <HelpTOCNode Title="_emailSender Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._emailSender.htm" />
+        <HelpTOCNode Title="_externalCookieScheme Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._externalCookieScheme.htm" />
+        <HelpTOCNode Title="_logger Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._logger.htm" />
+        <HelpTOCNode Title="_signInManager Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._signInManager.htm" />
+        <HelpTOCNode Title="_smsSender Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._smsSender.htm" />
+        <HelpTOCNode Title="_userManager Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._userManager.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0f947335-7ad7-4d15-8fd3-42f06f0c63dd" Title="ManageController Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm">
+        <HelpTOCNode Title="AddErrors Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.AddErrors.htm" />
+        <HelpTOCNode Id="f36f0ed6-ba92-4221-ad7f-3e07f20cbc40" Title="AddPhoneNumber Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.AddPhoneNumber.htm">
+          <HelpTOCNode Title="AddPhoneNumber Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.AddPhoneNumber.htm" />
+          <HelpTOCNode Title="AddPhoneNumber Method (AddPhoneNumberViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.AddPhoneNumber_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a4841f5a-e068-48be-9e03-59f49a2e9e1c" Title="ChangePassword Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ChangePassword.htm">
+          <HelpTOCNode Title="ChangePassword Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ChangePassword.htm" />
+          <HelpTOCNode Title="ChangePassword Method (ChangePasswordViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ChangePassword_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="DisableTwoFactorAuthentication Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.DisableTwoFactorAuthentication.htm" />
+        <HelpTOCNode Title="EnableTwoFactorAuthentication Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.EnableTwoFactorAuthentication.htm" />
+        <HelpTOCNode Title="GetCurrentUserAsync Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.GetCurrentUserAsync.htm" />
+        <HelpTOCNode Title="Index Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.Index.htm" />
+        <HelpTOCNode Title="LinkLogin Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.LinkLogin.htm" />
+        <HelpTOCNode Title="LinkLoginCallback Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.LinkLoginCallback.htm" />
+        <HelpTOCNode Title="ManageLogins Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageLogins.htm" />
+        <HelpTOCNode Title="RemoveLogin Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.RemoveLogin.htm" />
+        <HelpTOCNode Title="RemovePhoneNumber Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.RemovePhoneNumber.htm" />
+        <HelpTOCNode Id="7940f230-4203-4ce0-b666-5544c9f5ba09" Title="SetPassword Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.SetPassword.htm">
+          <HelpTOCNode Title="SetPassword Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.SetPassword.htm" />
+          <HelpTOCNode Title="SetPassword Method (SetPasswordViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.SetPassword_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="81731000-9392-4289-8846-b9a4b026c1b8" Title="VerifyPhoneNumber Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.VerifyPhoneNumber.htm">
+          <HelpTOCNode Title="VerifyPhoneNumber Method (String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.VerifyPhoneNumber.htm" />
+          <HelpTOCNode Title="VerifyPhoneNumber Method (VerifyPhoneNumberViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.VerifyPhoneNumber_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="ManageController Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="ManageController.ManageMessageId Enumeration" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+    <HelpTOCNode Id="60a1df9b-590b-4d5e-8fd1-43fae8d48b15" Title="UsersController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm">
+      <HelpTOCNode Title="UsersController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm" />
+      <HelpTOCNode Title="UsersController Constructor " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.-ctor.htm" />
+      <HelpTOCNode Id="2f8c8eb9-8880-4560-8474-deac274382d8" Title="UsersController Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm">
+        <HelpTOCNode Id="0503c92e-1350-4541-aa89-c10647d9adfc" Title="ChangePassword Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangePassword.htm">
+          <HelpTOCNode Title="ChangePassword Method (String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangePassword.htm" />
+          <HelpTOCNode Title="ChangePassword Method (String, ChangePasswordViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangePassword_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="096650d4-4056-4445-bc83-6773fdceea02" Title="ChangeRole Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangeRole.htm">
+          <HelpTOCNode Title="ChangeRole Method (String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangeRole.htm" />
+          <HelpTOCNode Title="ChangeRole Method (String, UserViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangeRole_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="e7def442-4268-4b06-88a5-a39eac2ba58a" Title="Edit Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Edit.htm">
+          <HelpTOCNode Title="Edit Method (String)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Edit.htm" />
+          <HelpTOCNode Title="Edit Method (String, UserViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Edit_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Index Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Index.htm" />
+        <HelpTOCNode Id="2b4ea645-82f1-453c-85e4-ab133e14c935" Title="Upload Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Upload.htm">
+          <HelpTOCNode Title="Upload Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Upload.htm" />
+          <HelpTOCNode Title="Upload Method (IFormFile)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Upload_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="UserExists Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.UserExists.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1a0a9a5e-551a-42ab-8346-5f0fc25c1194" Title="UsersController Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm">
+        <HelpTOCNode Title="ActiveDirectoryColumnMapping Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ActiveDirectoryColumnMapping.htm" />
+        <HelpTOCNode Title="Db Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Db.htm" />
+        <HelpTOCNode Title="UserManager Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.UserManager.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="ad5da172-139f-4e37-aa75-e5c47ecaca90" Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data Namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.htm">
+    <HelpTOCNode Id="47f7c4d5-e22a-4c4c-a5ae-0061305e3eee" Title="ApplicationDbContext Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm">
+      <HelpTOCNode Title="ApplicationDbContext Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+      <HelpTOCNode Title="ApplicationDbContext Constructor " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.-ctor.htm" />
+      <HelpTOCNode Title="ApplicationDbContext Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+      <HelpTOCNode Title="ApplicationDbContext Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="79f2a11a-824f-4a0f-b02e-c7fd77978862" Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations Namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.htm">
+    <HelpTOCNode Id="020668ad-a239-459e-a842-eb4de31a4cc5" Title="ApplicationDbContextModelSnapshot Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm">
+      <HelpTOCNode Title="ApplicationDbContextModelSnapshot Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+      <HelpTOCNode Id="c548e4b4-5f1a-4ade-9299-9d491ab2312e" Title="ApplicationDbContextModelSnapshot Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm">
+        <HelpTOCNode Id="d430b470-d0cd-4b44-87b4-8d1054ee5569" Title="BuildModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.BuildModel.htm">
+          <HelpTOCNode Title="BuildModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.BuildModel.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="ApplicationDbContextModelSnapshot Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b90779b7-a3d1-4c17-98df-65a6092f62f4" Title="CreateIdentitySchema Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm">
+      <HelpTOCNode Title="CreateIdentitySchema Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+      <HelpTOCNode Id="8b19ccc8-bca6-437f-b94a-8a84c63e0c89" Title="CreateIdentitySchema Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm">
+        <HelpTOCNode Id="fc7be458-780b-4a57-9df5-e26798075708" Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.BuildTargetModel.htm">
+          <HelpTOCNode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.BuildTargetModel.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="51431f4a-474c-4d26-8859-3aa48ec550da" Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Down.htm">
+          <HelpTOCNode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Down.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="e36e7c42-47e1-407a-b7ba-408193c1caa7" Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Up.htm">
+          <HelpTOCNode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Up.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="CreateIdentitySchema Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7b758b67-4161-4cd8-a0f1-df9e721d4687" Title="Migration1 Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm">
+      <HelpTOCNode Title="Migration1 Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+      <HelpTOCNode Id="db1708ee-943b-411b-b506-2bf9f12a0508" Title="Migration1 Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm">
+        <HelpTOCNode Id="00e0e90e-ca3d-4147-be12-85462bd9ee97" Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.BuildTargetModel.htm">
+          <HelpTOCNode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.BuildTargetModel.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="dbb131ad-a2e0-4b40-85b0-8e3d14dcf71a" Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Down.htm">
+          <HelpTOCNode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Down.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="deb88537-4df4-40a9-b5c5-aea78789f3f7" Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Up.htm">
+          <HelpTOCNode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Up.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="Migration1 Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1df613a6-db65-4cd4-8569-b6157d75987d" Title="Migration2 Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm">
+      <HelpTOCNode Title="Migration2 Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+      <HelpTOCNode Id="3ba8b633-3ae4-4695-8cee-2875b7d8653b" Title="Migration2 Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm">
+        <HelpTOCNode Id="9e438f12-6e15-4b89-9e99-d722ebbe19f0" Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.BuildTargetModel.htm">
+          <HelpTOCNode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.BuildTargetModel.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="0a5f583b-32ca-428f-9bad-076554ae8f79" Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Down.htm">
+          <HelpTOCNode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Down.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a25e67f3-af2a-4b8a-9114-63db5e7aae9d" Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Up.htm">
+          <HelpTOCNode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Up.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="Migration2 Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="3c046078-87c6-4f39-97e3-f99b27142ab3" Title="Migration3 Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm">
+      <HelpTOCNode Title="Migration3 Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+      <HelpTOCNode Id="313317d4-74a4-4ea0-a7b7-eff38c4ebb12" Title="Migration3 Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm">
+        <HelpTOCNode Id="de1b5485-19fe-457d-a793-dd89d4d98e50" Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.BuildTargetModel.htm">
+          <HelpTOCNode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.BuildTargetModel.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="273c997a-8cda-4735-ba99-6fa72132f740" Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Down.htm">
+          <HelpTOCNode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Down.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="917abce5-583c-4221-97b6-a87c1223e2b7" Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Up.htm">
+          <HelpTOCNode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Up.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="Migration3 Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="3ed131e6-860e-4871-af5d-013e85abea12" Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models Namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.htm">
+    <HelpTOCNode Id="0a0f14fc-977f-4542-b6bc-a9a54d7cfcee" Title="User Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm">
+      <HelpTOCNode Title="User Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+      <HelpTOCNode Id="9db6a0fc-358a-4db9-ab3f-a3c9c6ae3aff" Title="User Constructor " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.-ctor.htm">
+        <HelpTOCNode Title="User Constructor " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.-ctor.htm" />
+        <HelpTOCNode Title="User Constructor (UserViewModel)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="User Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+      <HelpTOCNode Id="adc9016c-3e19-434e-b094-6c21eae33c6d" Title="User Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm">
+        <HelpTOCNode Title="Department Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.Department.htm" />
+        <HelpTOCNode Title="FirstName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.FirstName.htm" />
+        <HelpTOCNode Title="IsActive Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.IsActive.htm" />
+        <HelpTOCNode Title="LastName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.LastName.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.Status.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="UserEvacuationStatus Enumeration" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.htm" />
+    <HelpTOCNode Id="ce42816a-8644-445b-af88-3fc4acdf07d7" Title="UserViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm">
+      <HelpTOCNode Title="UserViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+      <HelpTOCNode Id="750888b1-5991-4575-8477-c3885a15f937" Title="UserViewModel Constructor " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.-ctor.htm">
+        <HelpTOCNode Title="UserViewModel Constructor " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.-ctor.htm" />
+        <HelpTOCNode Title="UserViewModel Constructor (User)" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="UserViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+      <HelpTOCNode Id="4beb5787-f394-4dff-aebd-300e75479ff4" Title="UserViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm">
+        <HelpTOCNode Title="Department Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Department.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Email.htm" />
+        <HelpTOCNode Title="FirstName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.FirstName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Id.htm" />
+        <HelpTOCNode Title="IsActive Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.IsActive.htm" />
+        <HelpTOCNode Title="LastName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.LastName.htm" />
+        <HelpTOCNode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.PhoneNumber.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Status.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="b3e715bc-d000-4331-b4b4-0d0a05c61e09" Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels Namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.htm">
+    <HelpTOCNode Id="69a52d10-3093-461d-a462-adc87d02bbe1" Title="ExternalLoginConfirmationViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm">
+      <HelpTOCNode Title="ExternalLoginConfirmationViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+      <HelpTOCNode Title="ExternalLoginConfirmationViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+      <HelpTOCNode Id="cccd6394-ae8d-4886-b1fd-e5f2985cdc99" Title="ExternalLoginConfirmationViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm">
+        <HelpTOCNode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.Email.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6f4e15b7-dcaa-464e-9b8c-c5afcbd9311c" Title="ForgotPasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm">
+      <HelpTOCNode Title="ForgotPasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+      <HelpTOCNode Title="ForgotPasswordViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+      <HelpTOCNode Id="5687270f-7c65-415f-8135-3b9a54c9e48a" Title="ForgotPasswordViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm">
+        <HelpTOCNode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.Email.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="15e736e6-6445-4d0f-b82e-cc3a9b42500e" Title="LoginViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm">
+      <HelpTOCNode Title="LoginViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+      <HelpTOCNode Title="LoginViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+      <HelpTOCNode Id="57aa1289-aacc-41c8-97b2-b5dcd62aa946" Title="LoginViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm">
+        <HelpTOCNode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.Email.htm" />
+        <HelpTOCNode Title="Password Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.Password.htm" />
+        <HelpTOCNode Title="RememberMe Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.RememberMe.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="feda00d5-d2ab-4985-ae1c-9bcddaa38587" Title="RegisterViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm">
+      <HelpTOCNode Title="RegisterViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+      <HelpTOCNode Title="RegisterViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+      <HelpTOCNode Id="7f9811b1-2321-4718-b9d5-04f4c05b23ca" Title="RegisterViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm">
+        <HelpTOCNode Title="ConfirmPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.ConfirmPassword.htm" />
+        <HelpTOCNode Title="Department Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.Department.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.Email.htm" />
+        <HelpTOCNode Title="FirstName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.FirstName.htm" />
+        <HelpTOCNode Title="LastName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.LastName.htm" />
+        <HelpTOCNode Title="Password Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.Password.htm" />
+        <HelpTOCNode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.PhoneNumber.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="829c2eb9-b9ad-4aef-be9f-1543ae5501ff" Title="ResetPasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm">
+      <HelpTOCNode Title="ResetPasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+      <HelpTOCNode Title="ResetPasswordViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+      <HelpTOCNode Id="26d1cead-31c4-40d4-8386-64b1f07634fd" Title="ResetPasswordViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm">
+        <HelpTOCNode Title="Code Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.Code.htm" />
+        <HelpTOCNode Title="ConfirmPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.ConfirmPassword.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.Email.htm" />
+        <HelpTOCNode Title="Password Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.Password.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f7a4429c-dcb9-42db-91a8-c2c7eb3ace04" Title="SendCodeViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm">
+      <HelpTOCNode Title="SendCodeViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+      <HelpTOCNode Title="SendCodeViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+      <HelpTOCNode Id="e389b6d4-a3cb-4f3c-948d-487ad14cf210" Title="SendCodeViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm">
+        <HelpTOCNode Title="Providers Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.Providers.htm" />
+        <HelpTOCNode Title="RememberMe Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.RememberMe.htm" />
+        <HelpTOCNode Title="ReturnUrl Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.ReturnUrl.htm" />
+        <HelpTOCNode Title="SelectedProvider Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.SelectedProvider.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ea30053f-44ef-4559-95c7-94a258c078c2" Title="VerifyCodeViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm">
+      <HelpTOCNode Title="VerifyCodeViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+      <HelpTOCNode Title="VerifyCodeViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+      <HelpTOCNode Id="56076362-d109-42b4-b99d-06deba1f5d13" Title="VerifyCodeViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm">
+        <HelpTOCNode Title="Code Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.Code.htm" />
+        <HelpTOCNode Title="Provider Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.Provider.htm" />
+        <HelpTOCNode Title="RememberBrowser Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.RememberBrowser.htm" />
+        <HelpTOCNode Title="RememberMe Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.RememberMe.htm" />
+        <HelpTOCNode Title="ReturnUrl Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.ReturnUrl.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="68b84473-efc9-4eaa-8791-6a5fc4976501" Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels Namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.htm">
+    <HelpTOCNode Id="8107f773-7cfc-45d3-9049-b27628d8b544" Title="AddPhoneNumberViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm">
+      <HelpTOCNode Title="AddPhoneNumberViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+      <HelpTOCNode Title="AddPhoneNumberViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+      <HelpTOCNode Id="d6ab8eac-bda4-41a1-b441-7dc56e2c3b42" Title="AddPhoneNumberViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm">
+        <HelpTOCNode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.PhoneNumber.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="37f80a4b-2747-4fb0-a65d-fa0a1d2eddbe" Title="ChangePasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm">
+      <HelpTOCNode Title="ChangePasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+      <HelpTOCNode Title="ChangePasswordViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+      <HelpTOCNode Id="c156550d-f262-439c-ab00-ea3c3ff9169f" Title="ChangePasswordViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm">
+        <HelpTOCNode Title="ConfirmPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.ConfirmPassword.htm" />
+        <HelpTOCNode Title="NewPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.NewPassword.htm" />
+        <HelpTOCNode Title="OldPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.OldPassword.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="51f560f6-b31a-4459-bcab-5c97e8d2ecdd" Title="ConfigureTwoFactorViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm">
+      <HelpTOCNode Title="ConfigureTwoFactorViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+      <HelpTOCNode Title="ConfigureTwoFactorViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+      <HelpTOCNode Id="9183982e-6355-486f-9619-aa145264b389" Title="ConfigureTwoFactorViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm">
+        <HelpTOCNode Title="Providers Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.Providers.htm" />
+        <HelpTOCNode Title="SelectedProvider Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.SelectedProvider.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1cb7164e-caa2-4a02-a993-2fd9b1d1ff27" Title="FactorViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm">
+      <HelpTOCNode Title="FactorViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+      <HelpTOCNode Title="FactorViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+      <HelpTOCNode Id="7ceed7fe-0cf3-4760-8534-bd23ebcb5265" Title="FactorViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm">
+        <HelpTOCNode Title="Purpose Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.Purpose.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3be22276-d515-4e63-9a51-99068ae4a779" Title="IndexViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm">
+      <HelpTOCNode Title="IndexViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+      <HelpTOCNode Title="IndexViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+      <HelpTOCNode Id="06f1a614-5d2e-4be8-af22-b0076abd490e" Title="IndexViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm">
+        <HelpTOCNode Title="BrowserRemembered Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.BrowserRemembered.htm" />
+        <HelpTOCNode Title="HasPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.HasPassword.htm" />
+        <HelpTOCNode Title="Logins Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.Logins.htm" />
+        <HelpTOCNode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.PhoneNumber.htm" />
+        <HelpTOCNode Title="TwoFactor Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.TwoFactor.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5fe920f3-3394-4d9a-bfad-0e55133ffc96" Title="ManageLoginsViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm">
+      <HelpTOCNode Title="ManageLoginsViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+      <HelpTOCNode Title="ManageLoginsViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+      <HelpTOCNode Id="84645f45-de4f-46ae-8692-7040b6809f6b" Title="ManageLoginsViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm">
+        <HelpTOCNode Title="CurrentLogins Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.CurrentLogins.htm" />
+        <HelpTOCNode Title="OtherLogins Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.OtherLogins.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fd51f36b-01b7-4cf6-82db-2f63ce99015c" Title="RemoveLoginViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm">
+      <HelpTOCNode Title="RemoveLoginViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+      <HelpTOCNode Title="RemoveLoginViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+      <HelpTOCNode Id="cc3b8339-9061-44c7-84aa-6f715a608f00" Title="RemoveLoginViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm">
+        <HelpTOCNode Title="LoginProvider Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.LoginProvider.htm" />
+        <HelpTOCNode Title="ProviderKey Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.ProviderKey.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6cb20c72-f4c4-4a07-bba1-03fa85d64601" Title="SetPasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm">
+      <HelpTOCNode Title="SetPasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+      <HelpTOCNode Title="SetPasswordViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+      <HelpTOCNode Id="1e31e20f-b44b-4cc4-88c1-750213d499ac" Title="SetPasswordViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm">
+        <HelpTOCNode Title="ConfirmPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.ConfirmPassword.htm" />
+        <HelpTOCNode Title="NewPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.NewPassword.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e9ed1fec-056a-4844-ab85-2df1639e9912" Title="VerifyPhoneNumberViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm">
+      <HelpTOCNode Title="VerifyPhoneNumberViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+      <HelpTOCNode Title="VerifyPhoneNumberViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+      <HelpTOCNode Id="ac3d0be8-6916-496a-bfb9-29d113b4515e" Title="VerifyPhoneNumberViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm">
+        <HelpTOCNode Title="Code Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.Code.htm" />
+        <HelpTOCNode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.PhoneNumber.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="e3b9afba-fb63-41e9-955f-b1787a0ee5c0" Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Services Namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.htm">
+    <HelpTOCNode Id="0e3ea308-46b8-4e80-81ef-ad00fef32fa0" Title="AuthMessageSender Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm">
+      <HelpTOCNode Title="AuthMessageSender Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm" />
+      <HelpTOCNode Title="AuthMessageSender Constructor " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.-ctor.htm" />
+      <HelpTOCNode Id="a8146220-080c-4d65-a588-0d5c5aafb879" Title="AuthMessageSender Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm">
+        <HelpTOCNode Title="Execute Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.Execute.htm" />
+        <HelpTOCNode Title="SendEmailAsync Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.SendEmailAsync.htm" />
+        <HelpTOCNode Title="SendSmsAsync Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.SendSmsAsync.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1973ae9d-ddab-48b0-aa53-ab395c202559" Title="AuthMessageSender Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm">
+        <HelpTOCNode Title="Options Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.Options.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f20ec667-ca54-46ac-850c-a2fbfde28ac9" Title="AuthMessageSenderOptions Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm">
+      <HelpTOCNode Title="AuthMessageSenderOptions Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+      <HelpTOCNode Title="AuthMessageSenderOptions Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+      <HelpTOCNode Id="8bd7e0a7-18ac-40fc-a9d3-52396407493f" Title="AuthMessageSenderOptions Properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm">
+        <HelpTOCNode Title="SendGridKey Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.SendGridKey.htm" />
+        <HelpTOCNode Title="SendGridUser Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.SendGridUser.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7ac49cd2-a42c-4dd8-bf9b-d0b82f87d891" Title="IEmailSender Interface" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm">
+      <HelpTOCNode Title="IEmailSender Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm" />
+      <HelpTOCNode Id="55590fa7-a24a-4306-821a-c3be484ba1fc" Title="IEmailSender Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm">
+        <HelpTOCNode Title="SendEmailAsync Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.SendEmailAsync.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ec4340b2-8206-4744-b47f-a8b5c039fd05" Title="ISmsSender Interface" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm">
+      <HelpTOCNode Title="ISmsSender Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm" />
+      <HelpTOCNode Id="0769c5a3-6e5d-423c-89c2-27ea2fd96446" Title="ISmsSender Methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm">
+        <HelpTOCNode Title="SendSmsAsync Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.SendSmsAsync.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AccessDenied method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.AccessDenied.htm" />
+  <HelpKINode Title="AccountController class">
+    <HelpKINode Title="AccountController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+    <HelpKINode Title="AccountController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+    <HelpKINode Title="about AccountController class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AccountController.AccessDenied method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.AccessDenied.htm" />
+  <HelpKINode Title="AccountController.AccountController constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.-ctor.htm" />
+  <HelpKINode Title="AccountController.AddErrors method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.AddErrors.htm" />
+  <HelpKINode Title="AccountController.ConfirmEmail method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ConfirmEmail.htm" />
+  <HelpKINode Title="AccountController.ExternalLogin method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ExternalLogin.htm" />
+  <HelpKINode Title="AccountController.ExternalLoginCallback method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ExternalLoginCallback.htm" />
+  <HelpKINode Title="AccountController.ExternalLoginConfirmation method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ExternalLoginConfirmation.htm" />
+  <HelpKINode Title="AccountController.ForgotPassword method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ForgotPassword.htm" />
+  <HelpKINode Title="AccountController.ForgotPasswordConfirmation method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ForgotPasswordConfirmation.htm" />
+  <HelpKINode Title="AccountController.Login method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Login.htm" />
+  <HelpKINode Title="AccountController.Logout method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Logout.htm" />
+  <HelpKINode Title="AccountController.RedirectToLocal method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.RedirectToLocal.htm" />
+  <HelpKINode Title="AccountController.Register method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Register.htm" />
+  <HelpKINode Title="AccountController.ResetPassword method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ResetPassword.htm" />
+  <HelpKINode Title="AccountController.ResetPasswordConfirmation method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ResetPasswordConfirmation.htm" />
+  <HelpKINode Title="AccountController.SendCode method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.SendCode.htm" />
+  <HelpKINode Title="AccountController.VerifyCode method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.VerifyCode.htm" />
+  <HelpKINode Title="AccountController._emailSender field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._emailSender.htm" />
+  <HelpKINode Title="AccountController._externalCookieScheme field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._externalCookieScheme.htm" />
+  <HelpKINode Title="AccountController._logger field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._logger.htm" />
+  <HelpKINode Title="AccountController._signInManager field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._signInManager.htm" />
+  <HelpKINode Title="AccountController._smsSender field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._smsSender.htm" />
+  <HelpKINode Title="AccountController._userManager field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._userManager.htm" />
+  <HelpKINode Title="ActiveDirectoryColumnMapping class">
+    <HelpKINode Title="ActiveDirectoryColumnMapping Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+    <HelpKINode Title="ActiveDirectoryColumnMapping Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+    <HelpKINode Title="about ActiveDirectoryColumnMapping class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ActiveDirectoryColumnMapping property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ActiveDirectoryColumnMapping.htm" />
+  <HelpKINode Title="ActiveDirectoryColumnMapping.Department property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.Department.htm" />
+  <HelpKINode Title="ActiveDirectoryColumnMapping.DepartmentPrefix property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.DepartmentPrefix.htm" />
+  <HelpKINode Title="ActiveDirectoryColumnMapping.Email property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.Email.htm" />
+  <HelpKINode Title="ActiveDirectoryColumnMapping.FirstName property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.FirstName.htm" />
+  <HelpKINode Title="ActiveDirectoryColumnMapping.IsActive property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.IsActive.htm" />
+  <HelpKINode Title="ActiveDirectoryColumnMapping.LastName property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.LastName.htm" />
+  <HelpKINode Title="ActiveDirectoryColumnMapping.PhoneNumber property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.PhoneNumber.htm" />
+  <HelpKINode Title="AddErrors method">
+    <HelpKINode Title="AddErrors Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.AddErrors.htm" />
+    <HelpKINode Title="AddErrors Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.AddErrors.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddLoginSuccess enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="AddLoginSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.AddLoginSuccess.htm" />
+  <HelpKINode Title="AddPhoneNumber method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.AddPhoneNumber.htm" />
+  <HelpKINode Title="AddPhoneNumberViewModel class">
+    <HelpKINode Title="AddPhoneNumberViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+    <HelpKINode Title="AddPhoneNumberViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+    <HelpKINode Title="about AddPhoneNumberViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddPhoneNumberViewModel.PhoneNumber property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.PhoneNumber.htm" />
+  <HelpKINode Title="AddPhoneSuccess enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="AddPhoneSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.AddPhoneSuccess.htm" />
+  <HelpKINode Title="ApplicationDbContext class">
+    <HelpKINode Title="ApplicationDbContext Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+    <HelpKINode Title="ApplicationDbContext Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+    <HelpKINode Title="about ApplicationDbContext class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApplicationDbContext.ApplicationDbContext constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.-ctor.htm" />
+  <HelpKINode Title="ApplicationDbContextModelSnapshot class">
+    <HelpKINode Title="ApplicationDbContextModelSnapshot Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+    <HelpKINode Title="ApplicationDbContextModelSnapshot Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+    <HelpKINode Title="about ApplicationDbContextModelSnapshot class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApplicationDbContextModelSnapshot.BuildModel method">
+    <HelpKINode Title="BuildModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.BuildModel.htm" />
+    <HelpKINode Title="BuildModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.BuildModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuthMessageSender class">
+    <HelpKINode Title="AuthMessageSender Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm" />
+    <HelpKINode Title="AuthMessageSender Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm" />
+    <HelpKINode Title="about AuthMessageSender class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuthMessageSender.AuthMessageSender constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.-ctor.htm" />
+  <HelpKINode Title="AuthMessageSender.Execute method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.Execute.htm" />
+  <HelpKINode Title="AuthMessageSender.Options property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.Options.htm" />
+  <HelpKINode Title="AuthMessageSender.SendEmailAsync method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.SendEmailAsync.htm" />
+  <HelpKINode Title="AuthMessageSender.SendSmsAsync method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.SendSmsAsync.htm" />
+  <HelpKINode Title="AuthMessageSenderOptions class">
+    <HelpKINode Title="AuthMessageSenderOptions Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+    <HelpKINode Title="AuthMessageSenderOptions Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+    <HelpKINode Title="about AuthMessageSenderOptions class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuthMessageSenderOptions.SendGridKey property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.SendGridKey.htm" />
+  <HelpKINode Title="AuthMessageSenderOptions.SendGridUser property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.SendGridUser.htm" />
+  <HelpKINode Title="Away enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.htm" />
+  <HelpKINode Title="Away field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.Away.htm" />
+  <HelpKINode Title="BrowserRemembered property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.BrowserRemembered.htm" />
+  <HelpKINode Title="BuildModel method">
+    <HelpKINode Title="BuildModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.BuildModel.htm" />
+    <HelpKINode Title="BuildModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.BuildModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BuildTargetModel method">
+    <HelpKINode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.BuildTargetModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ChangePassword method">
+    <HelpKINode Title="ChangePassword Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ChangePassword.htm" />
+    <HelpKINode Title="ChangePassword Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangePassword.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ChangePasswordSuccess enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="ChangePasswordSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.ChangePasswordSuccess.htm" />
+  <HelpKINode Title="ChangePasswordViewModel class">
+    <HelpKINode Title="ChangePasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+    <HelpKINode Title="ChangePasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+    <HelpKINode Title="about ChangePasswordViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ChangePasswordViewModel.ConfirmPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.ConfirmPassword.htm" />
+  <HelpKINode Title="ChangePasswordViewModel.NewPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.NewPassword.htm" />
+  <HelpKINode Title="ChangePasswordViewModel.OldPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.OldPassword.htm" />
+  <HelpKINode Title="ChangeRole method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangeRole.htm" />
+  <HelpKINode Title="Code property">
+    <HelpKINode Title="Code Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.Code.htm" />
+    <HelpKINode Title="Code Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.Code.htm" />
+    <HelpKINode Title="Code Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.Code.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Configuration property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.Configuration.htm" />
+  <HelpKINode Title="Configure method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.Configure.htm" />
+  <HelpKINode Title="ConfigureServices method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.ConfigureServices.htm" />
+  <HelpKINode Title="ConfigureTwoFactorViewModel class">
+    <HelpKINode Title="ConfigureTwoFactorViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+    <HelpKINode Title="ConfigureTwoFactorViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+    <HelpKINode Title="about ConfigureTwoFactorViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConfigureTwoFactorViewModel.Providers property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.Providers.htm" />
+  <HelpKINode Title="ConfigureTwoFactorViewModel.SelectedProvider property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.SelectedProvider.htm" />
+  <HelpKINode Title="ConfirmEmail method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ConfirmEmail.htm" />
+  <HelpKINode Title="ConfirmPassword property">
+    <HelpKINode Title="ConfirmPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.ConfirmPassword.htm" />
+    <HelpKINode Title="ConfirmPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.ConfirmPassword.htm" />
+    <HelpKINode Title="ConfirmPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.ConfirmPassword.htm" />
+    <HelpKINode Title="ConfirmPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.ConfirmPassword.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateIdentitySchema class">
+    <HelpKINode Title="CreateIdentitySchema Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+    <HelpKINode Title="CreateIdentitySchema Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+    <HelpKINode Title="about CreateIdentitySchema class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateIdentitySchema.BuildTargetModel method">
+    <HelpKINode Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.BuildTargetModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateIdentitySchema.Down method">
+    <HelpKINode Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Down.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateIdentitySchema.Up method">
+    <HelpKINode Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Up.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateRolesAndUser method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.CreateRolesAndUser.htm" />
+  <HelpKINode Title="CurrentLogins property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.CurrentLogins.htm" />
+  <HelpKINode Title="Db property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Db.htm" />
+  <HelpKINode Title="Department property">
+    <HelpKINode Title="Department Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.Department.htm" />
+    <HelpKINode Title="Department Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Department.htm" />
+    <HelpKINode Title="Department Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.Department.htm" />
+    <HelpKINode Title="Department Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.Department.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DepartmentPrefix property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.DepartmentPrefix.htm" />
+  <HelpKINode Title="DisableTwoFactorAuthentication method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.DisableTwoFactorAuthentication.htm" />
+  <HelpKINode Title="Down method">
+    <HelpKINode Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Down.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Edit method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Edit.htm" />
+  <HelpKINode Title="Email property">
+    <HelpKINode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.Email.htm" />
+    <HelpKINode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.Email.htm" />
+    <HelpKINode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.Email.htm" />
+    <HelpKINode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.Email.htm" />
+    <HelpKINode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Email.htm" />
+    <HelpKINode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.Email.htm" />
+    <HelpKINode Title="Email Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.Email.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EnableTwoFactorAuthentication method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.EnableTwoFactorAuthentication.htm" />
+  <HelpKINode Title="Error enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="Error field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.Error.htm" />
+  <HelpKINode Title="Error method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Error.htm" />
+  <HelpKINode Title="Execute method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.Execute.htm" />
+  <HelpKINode Title="ExternalLogin method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ExternalLogin.htm" />
+  <HelpKINode Title="ExternalLoginCallback method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ExternalLoginCallback.htm" />
+  <HelpKINode Title="ExternalLoginConfirmation method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ExternalLoginConfirmation.htm" />
+  <HelpKINode Title="ExternalLoginConfirmationViewModel class">
+    <HelpKINode Title="ExternalLoginConfirmationViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+    <HelpKINode Title="ExternalLoginConfirmationViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+    <HelpKINode Title="about ExternalLoginConfirmationViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExternalLoginConfirmationViewModel.Email property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.Email.htm" />
+  <HelpKINode Title="FactorViewModel class">
+    <HelpKINode Title="FactorViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+    <HelpKINode Title="FactorViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+    <HelpKINode Title="about FactorViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FactorViewModel.Purpose property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.Purpose.htm" />
+  <HelpKINode Title="FirstName property">
+    <HelpKINode Title="FirstName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.FirstName.htm" />
+    <HelpKINode Title="FirstName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.FirstName.htm" />
+    <HelpKINode Title="FirstName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.FirstName.htm" />
+    <HelpKINode Title="FirstName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.FirstName.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ForgotPassword method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ForgotPassword.htm" />
+  <HelpKINode Title="ForgotPasswordConfirmation method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ForgotPasswordConfirmation.htm" />
+  <HelpKINode Title="ForgotPasswordViewModel class">
+    <HelpKINode Title="ForgotPasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+    <HelpKINode Title="ForgotPasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+    <HelpKINode Title="about ForgotPasswordViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ForgotPasswordViewModel.Email property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.Email.htm" />
+  <HelpKINode Title="GetCurrentUserAsync method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.GetCurrentUserAsync.htm" />
+  <HelpKINode Title="HasPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.HasPassword.htm" />
+  <HelpKINode Title="Here enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.htm" />
+  <HelpKINode Title="Here field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.Here.htm" />
+  <HelpKINode Title="HomeController class">
+    <HelpKINode Title="HomeController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm" />
+    <HelpKINode Title="HomeController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm" />
+    <HelpKINode Title="about HomeController class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HomeController.Error method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Error.htm" />
+  <HelpKINode Title="HomeController.HomeController constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.-ctor.htm" />
+  <HelpKINode Title="HomeController.Index method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Index.htm" />
+  <HelpKINode Title="HomeController.Reset method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Reset.htm" />
+  <HelpKINode Title="HomeController.ResetConfirmed method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.ResetConfirmed.htm" />
+  <HelpKINode Title="HomeController.UpdateStatus method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.UpdateStatus.htm" />
+  <HelpKINode Title="HomeController.UserManager property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.UserManager.htm" />
+  <HelpKINode Title="Id property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Id.htm" />
+  <HelpKINode Title="IEmailSender interface">
+    <HelpKINode Title="IEmailSender Interface" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm" />
+    <HelpKINode Title="IEmailSender Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm" />
+    <HelpKINode Title="about IEmailSender interface" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IEmailSender.SendEmailAsync method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.SendEmailAsync.htm" />
+  <HelpKINode Title="Index method">
+    <HelpKINode Title="Index Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Index.htm" />
+    <HelpKINode Title="Index Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Index.htm" />
+    <HelpKINode Title="Index Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.Index.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IndexViewModel class">
+    <HelpKINode Title="IndexViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+    <HelpKINode Title="IndexViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+    <HelpKINode Title="about IndexViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IndexViewModel.BrowserRemembered property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.BrowserRemembered.htm" />
+  <HelpKINode Title="IndexViewModel.HasPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.HasPassword.htm" />
+  <HelpKINode Title="IndexViewModel.Logins property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.Logins.htm" />
+  <HelpKINode Title="IndexViewModel.PhoneNumber property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.PhoneNumber.htm" />
+  <HelpKINode Title="IndexViewModel.TwoFactor property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.TwoFactor.htm" />
+  <HelpKINode Title="IsActive property">
+    <HelpKINode Title="IsActive Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.IsActive.htm" />
+    <HelpKINode Title="IsActive Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.IsActive.htm" />
+    <HelpKINode Title="IsActive Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.IsActive.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISmsSender interface">
+    <HelpKINode Title="ISmsSender Interface" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm" />
+    <HelpKINode Title="ISmsSender Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm" />
+    <HelpKINode Title="about ISmsSender interface" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISmsSender.SendSmsAsync method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.SendSmsAsync.htm" />
+  <HelpKINode Title="LastName property">
+    <HelpKINode Title="LastName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.LastName.htm" />
+    <HelpKINode Title="LastName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.LastName.htm" />
+    <HelpKINode Title="LastName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.LastName.htm" />
+    <HelpKINode Title="LastName Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.LastName.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LinkLogin method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.LinkLogin.htm" />
+  <HelpKINode Title="LinkLoginCallback method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.LinkLoginCallback.htm" />
+  <HelpKINode Title="Login method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Login.htm" />
+  <HelpKINode Title="LoginProvider property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.LoginProvider.htm" />
+  <HelpKINode Title="Logins property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.Logins.htm" />
+  <HelpKINode Title="LoginViewModel class">
+    <HelpKINode Title="LoginViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+    <HelpKINode Title="LoginViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+    <HelpKINode Title="about LoginViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LoginViewModel.Email property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.Email.htm" />
+  <HelpKINode Title="LoginViewModel.Password property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.Password.htm" />
+  <HelpKINode Title="LoginViewModel.RememberMe property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.RememberMe.htm" />
+  <HelpKINode Title="Logout method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Logout.htm" />
+  <HelpKINode Title="Main method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.Main.htm" />
+  <HelpKINode Title="ManageController class">
+    <HelpKINode Title="ManageController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+    <HelpKINode Title="ManageController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+    <HelpKINode Title="about ManageController class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ManageController.AddErrors method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.AddErrors.htm" />
+  <HelpKINode Title="ManageController.AddPhoneNumber method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.AddPhoneNumber.htm" />
+  <HelpKINode Title="ManageController.ChangePassword method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ChangePassword.htm" />
+  <HelpKINode Title="ManageController.DisableTwoFactorAuthentication method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.DisableTwoFactorAuthentication.htm" />
+  <HelpKINode Title="ManageController.EnableTwoFactorAuthentication method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.EnableTwoFactorAuthentication.htm" />
+  <HelpKINode Title="ManageController.GetCurrentUserAsync method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.GetCurrentUserAsync.htm" />
+  <HelpKINode Title="ManageController.Index method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.Index.htm" />
+  <HelpKINode Title="ManageController.LinkLogin method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.LinkLogin.htm" />
+  <HelpKINode Title="ManageController.LinkLoginCallback method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.LinkLoginCallback.htm" />
+  <HelpKINode Title="ManageController.ManageController constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.-ctor.htm" />
+  <HelpKINode Title="ManageController.ManageLogins method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageLogins.htm" />
+  <HelpKINode Title="ManageController.ManageMessageId enumeration" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="ManageController.RemoveLogin method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.RemoveLogin.htm" />
+  <HelpKINode Title="ManageController.RemovePhoneNumber method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.RemovePhoneNumber.htm" />
+  <HelpKINode Title="ManageController.SetPassword method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.SetPassword.htm" />
+  <HelpKINode Title="ManageController.VerifyPhoneNumber method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.VerifyPhoneNumber.htm" />
+  <HelpKINode Title="ManageController._emailSender field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._emailSender.htm" />
+  <HelpKINode Title="ManageController._externalCookieScheme field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._externalCookieScheme.htm" />
+  <HelpKINode Title="ManageController._logger field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._logger.htm" />
+  <HelpKINode Title="ManageController._signInManager field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._signInManager.htm" />
+  <HelpKINode Title="ManageController._smsSender field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._smsSender.htm" />
+  <HelpKINode Title="ManageController._userManager field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._userManager.htm" />
+  <HelpKINode Title="ManageLogins method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageLogins.htm" />
+  <HelpKINode Title="ManageLoginsViewModel class">
+    <HelpKINode Title="ManageLoginsViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+    <HelpKINode Title="ManageLoginsViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+    <HelpKINode Title="about ManageLoginsViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ManageLoginsViewModel.CurrentLogins property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.CurrentLogins.htm" />
+  <HelpKINode Title="ManageLoginsViewModel.OtherLogins property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.OtherLogins.htm" />
+  <HelpKINode Title="ManageMessageId.AddLoginSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.AddLoginSuccess.htm" />
+  <HelpKINode Title="ManageMessageId.AddPhoneSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.AddPhoneSuccess.htm" />
+  <HelpKINode Title="ManageMessageId.ChangePasswordSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.ChangePasswordSuccess.htm" />
+  <HelpKINode Title="ManageMessageId.Error field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.Error.htm" />
+  <HelpKINode Title="ManageMessageId.RemoveLoginSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.RemoveLoginSuccess.htm" />
+  <HelpKINode Title="ManageMessageId.RemovePhoneSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.RemovePhoneSuccess.htm" />
+  <HelpKINode Title="ManageMessageId.SetPasswordSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.SetPasswordSuccess.htm" />
+  <HelpKINode Title="ManageMessageId.SetTwoFactorSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.SetTwoFactorSuccess.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping class">
+    <HelpKINode Title="ActiveDirectoryColumnMapping Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+    <HelpKINode Title="ActiveDirectoryColumnMapping Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController class">
+    <HelpKINode Title="AccountController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+    <HelpKINode Title="AccountController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController class">
+    <HelpKINode Title="HomeController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm" />
+    <HelpKINode Title="HomeController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController class">
+    <HelpKINode Title="ManageController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+    <HelpKINode Title="ManageController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId enumeration" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController class">
+    <HelpKINode Title="UsersController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm" />
+    <HelpKINode Title="UsersController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext class">
+    <HelpKINode Title="ApplicationDbContext Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+    <HelpKINode Title="ApplicationDbContext Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.ApplicationDbContext.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot class">
+    <HelpKINode Title="ApplicationDbContextModelSnapshot Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+    <HelpKINode Title="ApplicationDbContextModelSnapshot Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.ApplicationDbContextModelSnapshot.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema class">
+    <HelpKINode Title="CreateIdentitySchema Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+    <HelpKINode Title="CreateIdentitySchema Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1 class">
+    <HelpKINode Title="Migration1 Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+    <HelpKINode Title="Migration1 Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2 class">
+    <HelpKINode Title="Migration2 Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+    <HelpKINode Title="Migration2 Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3 class">
+    <HelpKINode Title="Migration3 Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+    <HelpKINode Title="Migration3 Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel class">
+    <HelpKINode Title="ExternalLoginConfirmationViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+    <HelpKINode Title="ExternalLoginConfirmationViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ExternalLoginConfirmationViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel class">
+    <HelpKINode Title="ForgotPasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+    <HelpKINode Title="ForgotPasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ForgotPasswordViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel class">
+    <HelpKINode Title="LoginViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+    <HelpKINode Title="LoginViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel class">
+    <HelpKINode Title="RegisterViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+    <HelpKINode Title="RegisterViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel class">
+    <HelpKINode Title="ResetPasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+    <HelpKINode Title="ResetPasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel class">
+    <HelpKINode Title="SendCodeViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+    <HelpKINode Title="SendCodeViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel class">
+    <HelpKINode Title="VerifyCodeViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+    <HelpKINode Title="VerifyCodeViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel class">
+    <HelpKINode Title="AddPhoneNumberViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+    <HelpKINode Title="AddPhoneNumberViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel class">
+    <HelpKINode Title="ChangePasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+    <HelpKINode Title="ChangePasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel class">
+    <HelpKINode Title="ConfigureTwoFactorViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+    <HelpKINode Title="ConfigureTwoFactorViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel class">
+    <HelpKINode Title="FactorViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+    <HelpKINode Title="FactorViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel class">
+    <HelpKINode Title="IndexViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+    <HelpKINode Title="IndexViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel class">
+    <HelpKINode Title="ManageLoginsViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+    <HelpKINode Title="ManageLoginsViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel class">
+    <HelpKINode Title="RemoveLoginViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+    <HelpKINode Title="RemoveLoginViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel class">
+    <HelpKINode Title="SetPasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+    <HelpKINode Title="SetPasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel class">
+    <HelpKINode Title="VerifyPhoneNumberViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+    <HelpKINode Title="VerifyPhoneNumberViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User class">
+    <HelpKINode Title="User Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+    <HelpKINode Title="User Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus enumeration" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel class">
+    <HelpKINode Title="UserViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+    <HelpKINode Title="UserViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Program class">
+    <HelpKINode Title="Program Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm" />
+    <HelpKINode Title="Program Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Services namespace" Url="html/N-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender class">
+    <HelpKINode Title="AuthMessageSender Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm" />
+    <HelpKINode Title="AuthMessageSender Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions class">
+    <HelpKINode Title="AuthMessageSenderOptions Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+    <HelpKINode Title="AuthMessageSenderOptions Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender interface">
+    <HelpKINode Title="IEmailSender Interface" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm" />
+    <HelpKINode Title="IEmailSender Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender interface">
+    <HelpKINode Title="ISmsSender Interface" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm" />
+    <HelpKINode Title="ISmsSender Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup class">
+    <HelpKINode Title="Startup Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm" />
+    <HelpKINode Title="Startup Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration1 class">
+    <HelpKINode Title="Migration1 Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+    <HelpKINode Title="Migration1 Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+    <HelpKINode Title="about Migration1 class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration1.BuildTargetModel method">
+    <HelpKINode Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.BuildTargetModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration1.Down method">
+    <HelpKINode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Down.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration1.Up method">
+    <HelpKINode Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Up.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration2 class">
+    <HelpKINode Title="Migration2 Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+    <HelpKINode Title="Migration2 Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+    <HelpKINode Title="about Migration2 class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration2.BuildTargetModel method">
+    <HelpKINode Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.BuildTargetModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration2.Down method">
+    <HelpKINode Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Down.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration2.Up method">
+    <HelpKINode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Up.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration3 class">
+    <HelpKINode Title="Migration3 Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+    <HelpKINode Title="Migration3 Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+    <HelpKINode Title="about Migration3 class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration3.BuildTargetModel method">
+    <HelpKINode Title="BuildTargetModel Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.BuildTargetModel.htm" />
+    <HelpKINode Title="BuildTargetModel Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.BuildTargetModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration3.Down method">
+    <HelpKINode Title="Down Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Down.htm" />
+    <HelpKINode Title="Down Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Down.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Migration3.Up method">
+    <HelpKINode Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Up.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Missing enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.htm" />
+  <HelpKINode Title="Missing field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.Missing.htm" />
+  <HelpKINode Title="NewPassword property">
+    <HelpKINode Title="NewPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.NewPassword.htm" />
+    <HelpKINode Title="NewPassword Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.NewPassword.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OldPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ChangePasswordViewModel.OldPassword.htm" />
+  <HelpKINode Title="Options property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.Options.htm" />
+  <HelpKINode Title="OtherLogins property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ManageLoginsViewModel.OtherLogins.htm" />
+  <HelpKINode Title="Password property">
+    <HelpKINode Title="Password Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.Password.htm" />
+    <HelpKINode Title="Password Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.Password.htm" />
+    <HelpKINode Title="Password Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.Password.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PhoneNumber property">
+    <HelpKINode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.PhoneNumber.htm" />
+    <HelpKINode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.PhoneNumber.htm" />
+    <HelpKINode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.PhoneNumber.htm" />
+    <HelpKINode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.ActiveDirectoryColumnMapping.PhoneNumber.htm" />
+    <HelpKINode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.PhoneNumber.htm" />
+    <HelpKINode Title="PhoneNumber Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.AddPhoneNumberViewModel.PhoneNumber.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="Program Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm" />
+    <HelpKINode Title="Program Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm" />
+    <HelpKINode Title="about Program class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program.Main method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Program.Main.htm" />
+  <HelpKINode Title="Provider property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.Provider.htm" />
+  <HelpKINode Title="ProviderKey property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.ProviderKey.htm" />
+  <HelpKINode Title="Providers property">
+    <HelpKINode Title="Providers Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.Providers.htm" />
+    <HelpKINode Title="Providers Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.Providers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Purpose property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.FactorViewModel.Purpose.htm" />
+  <HelpKINode Title="RedirectToLocal method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.RedirectToLocal.htm" />
+  <HelpKINode Title="Register method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Register.htm" />
+  <HelpKINode Title="RegisterViewModel class">
+    <HelpKINode Title="RegisterViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+    <HelpKINode Title="RegisterViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+    <HelpKINode Title="about RegisterViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RegisterViewModel.ConfirmPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.ConfirmPassword.htm" />
+  <HelpKINode Title="RegisterViewModel.Department property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.Department.htm" />
+  <HelpKINode Title="RegisterViewModel.Email property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.Email.htm" />
+  <HelpKINode Title="RegisterViewModel.FirstName property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.FirstName.htm" />
+  <HelpKINode Title="RegisterViewModel.LastName property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.LastName.htm" />
+  <HelpKINode Title="RegisterViewModel.Password property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.Password.htm" />
+  <HelpKINode Title="RegisterViewModel.PhoneNumber property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.RegisterViewModel.PhoneNumber.htm" />
+  <HelpKINode Title="RememberBrowser property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.RememberBrowser.htm" />
+  <HelpKINode Title="RememberMe property">
+    <HelpKINode Title="RememberMe Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.RememberMe.htm" />
+    <HelpKINode Title="RememberMe Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.RememberMe.htm" />
+    <HelpKINode Title="RememberMe Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.LoginViewModel.RememberMe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RemoveLogin method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.RemoveLogin.htm" />
+  <HelpKINode Title="RemoveLoginSuccess enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="RemoveLoginSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.RemoveLoginSuccess.htm" />
+  <HelpKINode Title="RemoveLoginViewModel class">
+    <HelpKINode Title="RemoveLoginViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+    <HelpKINode Title="RemoveLoginViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+    <HelpKINode Title="about RemoveLoginViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RemoveLoginViewModel.LoginProvider property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.LoginProvider.htm" />
+  <HelpKINode Title="RemoveLoginViewModel.ProviderKey property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.RemoveLoginViewModel.ProviderKey.htm" />
+  <HelpKINode Title="RemovePhoneNumber method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.RemovePhoneNumber.htm" />
+  <HelpKINode Title="RemovePhoneSuccess enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="RemovePhoneSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.RemovePhoneSuccess.htm" />
+  <HelpKINode Title="Reset method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Reset.htm" />
+  <HelpKINode Title="ResetConfirmed method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.ResetConfirmed.htm" />
+  <HelpKINode Title="ResetPassword method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ResetPassword.htm" />
+  <HelpKINode Title="ResetPasswordConfirmation method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.ResetPasswordConfirmation.htm" />
+  <HelpKINode Title="ResetPasswordViewModel class">
+    <HelpKINode Title="ResetPasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+    <HelpKINode Title="ResetPasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+    <HelpKINode Title="about ResetPasswordViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResetPasswordViewModel.Code property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.Code.htm" />
+  <HelpKINode Title="ResetPasswordViewModel.ConfirmPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.ConfirmPassword.htm" />
+  <HelpKINode Title="ResetPasswordViewModel.Email property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.Email.htm" />
+  <HelpKINode Title="ResetPasswordViewModel.Password property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.ResetPasswordViewModel.Password.htm" />
+  <HelpKINode Title="ReturnUrl property">
+    <HelpKINode Title="ReturnUrl Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.ReturnUrl.htm" />
+    <HelpKINode Title="ReturnUrl Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.ReturnUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SelectedProvider property">
+    <HelpKINode Title="SelectedProvider Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.ConfigureTwoFactorViewModel.SelectedProvider.htm" />
+    <HelpKINode Title="SelectedProvider Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.SelectedProvider.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SendCode method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.SendCode.htm" />
+  <HelpKINode Title="SendCodeViewModel class">
+    <HelpKINode Title="SendCodeViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+    <HelpKINode Title="SendCodeViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+    <HelpKINode Title="about SendCodeViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SendCodeViewModel.Providers property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.Providers.htm" />
+  <HelpKINode Title="SendCodeViewModel.RememberMe property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.RememberMe.htm" />
+  <HelpKINode Title="SendCodeViewModel.ReturnUrl property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.ReturnUrl.htm" />
+  <HelpKINode Title="SendCodeViewModel.SelectedProvider property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.SendCodeViewModel.SelectedProvider.htm" />
+  <HelpKINode Title="SendEmailAsync method">
+    <HelpKINode Title="SendEmailAsync Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.SendEmailAsync.htm" />
+    <HelpKINode Title="SendEmailAsync Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.IEmailSender.SendEmailAsync.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SendGridKey property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.SendGridKey.htm" />
+  <HelpKINode Title="SendGridUser property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSenderOptions.SendGridUser.htm" />
+  <HelpKINode Title="SendSmsAsync method">
+    <HelpKINode Title="SendSmsAsync Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.AuthMessageSender.SendSmsAsync.htm" />
+    <HelpKINode Title="SendSmsAsync Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Services.ISmsSender.SendSmsAsync.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetPassword method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.SetPassword.htm" />
+  <HelpKINode Title="SetPasswordSuccess enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="SetPasswordSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.SetPasswordSuccess.htm" />
+  <HelpKINode Title="SetPasswordViewModel class">
+    <HelpKINode Title="SetPasswordViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+    <HelpKINode Title="SetPasswordViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+    <HelpKINode Title="about SetPasswordViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetPasswordViewModel.ConfirmPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.ConfirmPassword.htm" />
+  <HelpKINode Title="SetPasswordViewModel.NewPassword property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.SetPasswordViewModel.NewPassword.htm" />
+  <HelpKINode Title="SetTwoFactorSuccess enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.htm" />
+  <HelpKINode Title="SetTwoFactorSuccess field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.ManageMessageId.SetTwoFactorSuccess.htm" />
+  <HelpKINode Title="Startup class">
+    <HelpKINode Title="Startup Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm" />
+    <HelpKINode Title="Startup Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm" />
+    <HelpKINode Title="about Startup class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Startup.Configuration property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.Configuration.htm" />
+  <HelpKINode Title="Startup.Configure method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.Configure.htm" />
+  <HelpKINode Title="Startup.ConfigureServices method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.ConfigureServices.htm" />
+  <HelpKINode Title="Startup.CreateRolesAndUser method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.CreateRolesAndUser.htm" />
+  <HelpKINode Title="Startup.Startup constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Startup.-ctor.htm" />
+  <HelpKINode Title="Status property">
+    <HelpKINode Title="Status Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.Status.htm" />
+    <HelpKINode Title="Status Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Status.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TwoFactor property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.IndexViewModel.TwoFactor.htm" />
+  <HelpKINode Title="Unknown enumeration member" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.htm" />
+  <HelpKINode Title="Unknown field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.Unknown.htm" />
+  <HelpKINode Title="Up method">
+    <HelpKINode Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.CreateIdentitySchema.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration1.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration3.Up.htm" />
+    <HelpKINode Title="Up Method " Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Data.Migrations.Migration2.Up.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdateStatus method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.UpdateStatus.htm" />
+  <HelpKINode Title="Upload method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Upload.htm" />
+  <HelpKINode Title="User class">
+    <HelpKINode Title="User Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+    <HelpKINode Title="User Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+    <HelpKINode Title="about User class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.htm" />
+  </HelpKINode>
+  <HelpKINode Title="User.Department property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.Department.htm" />
+  <HelpKINode Title="User.FirstName property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.FirstName.htm" />
+  <HelpKINode Title="User.IsActive property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.IsActive.htm" />
+  <HelpKINode Title="User.LastName property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.LastName.htm" />
+  <HelpKINode Title="User.Status property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.Status.htm" />
+  <HelpKINode Title="User.User constructor" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.User.-ctor.htm" />
+  <HelpKINode Title="UserEvacuationStatus enumeration" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.htm" />
+  <HelpKINode Title="UserEvacuationStatus.Away field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.Away.htm" />
+  <HelpKINode Title="UserEvacuationStatus.Here field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.Here.htm" />
+  <HelpKINode Title="UserEvacuationStatus.Missing field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.Missing.htm" />
+  <HelpKINode Title="UserEvacuationStatus.Unknown field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserEvacuationStatus.Unknown.htm" />
+  <HelpKINode Title="UserExists method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.UserExists.htm" />
+  <HelpKINode Title="UserManager property">
+    <HelpKINode Title="UserManager Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.UserManager.htm" />
+    <HelpKINode Title="UserManager Property " Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.UserManager.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UsersController class">
+    <HelpKINode Title="UsersController Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm" />
+    <HelpKINode Title="UsersController Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm" />
+    <HelpKINode Title="about UsersController class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UsersController.ActiveDirectoryColumnMapping property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ActiveDirectoryColumnMapping.htm" />
+  <HelpKINode Title="UsersController.ChangePassword method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangePassword.htm" />
+  <HelpKINode Title="UsersController.ChangeRole method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.ChangeRole.htm" />
+  <HelpKINode Title="UsersController.Db property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Db.htm" />
+  <HelpKINode Title="UsersController.Edit method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Edit.htm" />
+  <HelpKINode Title="UsersController.Index method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Index.htm" />
+  <HelpKINode Title="UsersController.Upload method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Upload.htm" />
+  <HelpKINode Title="UsersController.UserExists method" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.UserExists.htm" />
+  <HelpKINode Title="UsersController.UserManager property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.UserManager.htm" />
+  <HelpKINode Title="UsersController.UsersController constructor" Url="html/M-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.-ctor.htm" />
+  <HelpKINode Title="UserViewModel class">
+    <HelpKINode Title="UserViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+    <HelpKINode Title="UserViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+    <HelpKINode Title="about UserViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserViewModel.Department property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Department.htm" />
+  <HelpKINode Title="UserViewModel.Email property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Email.htm" />
+  <HelpKINode Title="UserViewModel.FirstName property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.FirstName.htm" />
+  <HelpKINode Title="UserViewModel.Id property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Id.htm" />
+  <HelpKINode Title="UserViewModel.IsActive property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.IsActive.htm" />
+  <HelpKINode Title="UserViewModel.LastName property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.LastName.htm" />
+  <HelpKINode Title="UserViewModel.PhoneNumber property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.PhoneNumber.htm" />
+  <HelpKINode Title="UserViewModel.Status property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.Status.htm" />
+  <HelpKINode Title="UserViewModel.UserViewModel constructor" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.UserViewModel.-ctor.htm" />
+  <HelpKINode Title="VerifyCode method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.VerifyCode.htm" />
+  <HelpKINode Title="VerifyCodeViewModel class">
+    <HelpKINode Title="VerifyCodeViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+    <HelpKINode Title="VerifyCodeViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+    <HelpKINode Title="about VerifyCodeViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VerifyCodeViewModel.Code property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.Code.htm" />
+  <HelpKINode Title="VerifyCodeViewModel.Provider property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.Provider.htm" />
+  <HelpKINode Title="VerifyCodeViewModel.RememberBrowser property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.RememberBrowser.htm" />
+  <HelpKINode Title="VerifyCodeViewModel.RememberMe property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.RememberMe.htm" />
+  <HelpKINode Title="VerifyCodeViewModel.ReturnUrl property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.AccountViewModels.VerifyCodeViewModel.ReturnUrl.htm" />
+  <HelpKINode Title="VerifyPhoneNumber method" Url="html/Overload-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController.VerifyPhoneNumber.htm" />
+  <HelpKINode Title="VerifyPhoneNumberViewModel class">
+    <HelpKINode Title="VerifyPhoneNumberViewModel Class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+    <HelpKINode Title="VerifyPhoneNumberViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+    <HelpKINode Title="about VerifyPhoneNumberViewModel class" Url="html/T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VerifyPhoneNumberViewModel.Code property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.Code.htm" />
+  <HelpKINode Title="VerifyPhoneNumberViewModel.PhoneNumber property" Url="html/P-MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels.VerifyPhoneNumberViewModel.PhoneNumber.htm" />
+  <HelpKINode Title="_emailSender field">
+    <HelpKINode Title="_emailSender Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._emailSender.htm" />
+    <HelpKINode Title="_emailSender Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._emailSender.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_externalCookieScheme field">
+    <HelpKINode Title="_externalCookieScheme Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._externalCookieScheme.htm" />
+    <HelpKINode Title="_externalCookieScheme Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._externalCookieScheme.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_logger field">
+    <HelpKINode Title="_logger Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._logger.htm" />
+    <HelpKINode Title="_logger Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._logger.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_signInManager field">
+    <HelpKINode Title="_signInManager Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._signInManager.htm" />
+    <HelpKINode Title="_signInManager Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._signInManager.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_smsSender field">
+    <HelpKINode Title="_smsSender Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._smsSender.htm" />
+    <HelpKINode Title="_smsSender Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._smsSender.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_userManager field">
+    <HelpKINode Title="_userManager Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.ManageController._userManager.htm" />
+    <HelpKINode Title="_userManager Field" Url="html/F-MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController._userManager.htm" />
+  </HelpKINode>
+</HelpKI>

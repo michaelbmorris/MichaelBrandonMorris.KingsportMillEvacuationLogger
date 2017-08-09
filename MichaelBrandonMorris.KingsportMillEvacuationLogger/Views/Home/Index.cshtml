@@ -13,7 +13,7 @@
     columns.Add(model => model.FirstName).Titled("First Name");
     columns.Add(model => model.Department).Titled("Department");
     columns.Add(model => model.PhoneNumber).Titled("Phone Number");
-}).Filterable().Sortable().RowCss(model => model.Status == UserEvacuationStatus.Unknown ? "bg-warning" : model.Status == UserEvacuationStatus.Here ? "bg-success" : model.Status == UserEvacuationStatus.Away ? "bg-muted" : "bg-danger")
+}).Filterable().RowCss(model => model.Status == UserEvacuationStatus.Unknown ? "bg-warning" : model.Status == UserEvacuationStatus.Here ? "bg-success" : model.Status == UserEvacuationStatus.Away ? "bg-muted" : "bg-danger")
 
 <button class="btn btn-success form-control" id="refreshButton">Refresh</button>
 

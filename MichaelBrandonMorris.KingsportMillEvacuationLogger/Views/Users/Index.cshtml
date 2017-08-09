@@ -6,8 +6,8 @@
 
 <h2>@ViewData["Title"]</h2>
 
-<a asp-action="Delete" class="btn btn-danger">Delete</a>
 <a asp-action="Upload" class="btn btn-primary">Upload</a>
+<a asp-action="Delete" class="btn btn-danger">Delete</a>
 
 @Html.Grid(Model).Build(columns =>
 {
@@ -21,4 +21,4 @@
     columns.Add(model => $"<a class=\"btn btn-primary\" href=\"{Url.Action("Edit", new { id = model.Id })}\">Edit</a>").Encoded(false);
     columns.Add(model => $"<a class=\"btn btn-primary\" href=\"{Url.Action("ChangePassword", new { id = model.Id })}\">Change Password</a>").Encoded(false);
     columns.Add(model => $"<a class=\"btn btn-primary\" href=\"{Url.Action("ChangeRole", new { id = model.Id })}\">Change Role</a>").Encoded(false);
-}).Filterable().Sortable().Pageable()
+}).Filterable().Sortable()

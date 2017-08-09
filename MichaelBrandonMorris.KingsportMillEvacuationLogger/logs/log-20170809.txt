@@ -16856,3 +16856,93 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
 2017-08-09T15:48:13.8138271-04:00 0HL6VBU23B66Q [INF] Request finished in 792.321ms 500 text/html; charset=utf-8 (15c52c40)
+2017-08-09T15:53:42.7992502-04:00  [INF] User profile is available. Using '"C:\Users\morrisb\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-08-09T15:53:44.2562888-04:00  [INF] Executed DbCommand (84ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Index], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-08-09T15:53:44.3916476-04:00  [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Index], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-08-09T15:53:44.4096958-04:00  [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Index], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-08-09T15:53:44.4367685-04:00  [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Index], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-08-09T15:53:44.4668476-04:00  [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Index], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-08-09T15:53:44.4939193-04:00  [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Department], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[IsImported], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-08-09T15:53:44.9340877-04:00 0HL6VC1BT5U3O [INF] Request starting HTTP/1.1 GET http://localhost:63653/   (e5be5b71)
+2017-08-09T15:53:44.9340877-04:00 0HL6VC1BT5U3P [INF] Request starting HTTP/1.1 DEBUG http://localhost:63653/  0 (e5be5b71)
+2017-08-09T15:53:45.1486575-04:00 0HL6VC1BT5U3P [INF] Request finished in 268.3064ms 200  (15c52c40)
+2017-08-09T15:53:45.2910357-04:00 0HL6VC1BT5U3O [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-08-09T15:53:45.6219125-04:00 0HL6VC1BT5U3O [INF] Authorization was successful for user: "KTIT@domtar.com". (d7eb274a)
+2017-08-09T15:53:45.6750550-04:00 0HL6VC1BT5U3O [INF] Executing action method "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Index (MichaelBrandonMorris.KingsportMillEvacuationLogger)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-08-09T15:53:45.7141577-04:00 0HL6VC1BT5U3O [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[IsActive], [a].[IsImported], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Status], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a] (6438bdd5)
+2017-08-09T15:53:47.8207589-04:00 0HL6VC1BT5U3O [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-08-09T15:53:48.8244231-04:00 0HL6VC1BT5U3O [INF] Executed action "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Index (MichaelBrandonMorris.KingsportMillEvacuationLogger)" in 3229.4396ms (afa2e885)
+2017-08-09T15:53:48.9096491-04:00 0HL6VC1BT5U3O [INF] Request finished in 4036.6471ms 200 text/html; charset=utf-8 (15c52c40)
+2017-08-09T15:53:56.2734022-04:00 0HL6VC1BT5U3Q [INF] Request starting HTTP/1.1 GET http://localhost:63653/Users   (e5be5b71)
+2017-08-09T15:53:56.2844346-04:00 0HL6VC1BT5U3Q [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-08-09T15:53:56.2944567-04:00 0HL6VC1BT5U3Q [INF] Authorization was successful for user: "KTIT@domtar.com". (d7eb274a)
+2017-08-09T15:53:56.3055483-04:00 0HL6VC1BT5U3Q [INF] Executing action method "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Index (MichaelBrandonMorris.KingsportMillEvacuationLogger)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-08-09T15:53:56.3195808-04:00 0HL6VC1BT5U3Q [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Department], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[IsActive], [a].[IsImported], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Status], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a] (6438bdd5)
+2017-08-09T15:53:56.4499264-04:00 0HL6VC1BT5U3Q [INF] Executing ViewResult, running view at path "/Views/Users/Index.cshtml". (9707eebe)
+2017-08-09T15:53:56.5501925-04:00 0HL6VC1BT5U3Q [INF] Executed action "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.UsersController.Index (MichaelBrandonMorris.KingsportMillEvacuationLogger)" in 254.9748ms (afa2e885)
+2017-08-09T15:53:56.6113550-04:00 0HL6VC1BT5U3Q [INF] Request finished in 336.7149ms 200 text/html; charset=utf-8 (15c52c40)
+2017-08-09T15:56:26.1501967-04:00 0HL6VC1BT5U3R [INF] Request starting HTTP/1.1 POST http://localhost:63653/Account/Logout application/x-www-form-urlencoded 225 (e5be5b71)
+2017-08-09T15:56:26.1592198-04:00 0HL6VC1BT5U3R [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-08-09T15:56:26.1904670-04:00 0HL6VC1BT5U3R [INF] Authorization was successful for user: "KTIT@domtar.com". (d7eb274a)
+2017-08-09T15:56:26.2355818-04:00 0HL6VC1BT5U3R [INF] Executing action method "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Logout (MichaelBrandonMorris.KingsportMillEvacuationLogger)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-08-09T15:56:26.2666648-04:00 0HL6VC1BT5U3R [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2017-08-09T15:56:26.2726856-04:00 0HL6VC1BT5U3R [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2017-08-09T15:56:26.2981071-04:00 0HL6VC1BT5U3R [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2017-08-09T15:56:26.3031189-04:00 0HL6VC1BT5U3R [INF] User logged out. (f9c27106)
+2017-08-09T15:56:26.3111530-04:00 0HL6VC1BT5U3R [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2017-08-09T15:56:26.3171433-04:00 0HL6VC1BT5U3R [INF] Executed action "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Logout (MichaelBrandonMorris.KingsportMillEvacuationLogger)" in 127.6128ms (afa2e885)
+2017-08-09T15:56:26.3492282-04:00 0HL6VC1BT5U3R [INF] Request finished in 199.86ms 302  (15c52c40)
+2017-08-09T15:56:26.3762995-04:00 0HL6VC1BT5U3S [INF] Request starting HTTP/1.1 GET http://localhost:63653/   (e5be5b71)
+2017-08-09T15:56:26.3883376-04:00 0HL6VC1BT5U3S [INF] Authorization failed for user: null. (a4ab1676)
+2017-08-09T15:56:26.3913393-04:00 0HL6VC1BT5U3S [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2017-08-09T15:56:26.3993615-04:00 0HL6VC1BT5U3S [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2017-08-09T15:56:26.4164204-04:00 0HL6VC1BT5U3S [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2017-08-09T15:56:26.4424790-04:00 0HL6VC1BT5U3S [INF] Executed action "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Index (MichaelBrandonMorris.KingsportMillEvacuationLogger)" in 32.4825ms (afa2e885)
+2017-08-09T15:56:26.4885976-04:00 0HL6VC1BT5U3S [INF] Request finished in 104.1256ms 302  (15c52c40)
+2017-08-09T15:56:26.5146684-04:00 0HL6VC1BT5U3T [INF] Request starting HTTP/1.1 GET http://localhost:63653/Account/Login?ReturnUrl=%2F   (e5be5b71)
+2017-08-09T15:56:26.6189438-04:00 0HL6VC1BT5U3T [INF] Executing action method "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Login (MichaelBrandonMorris.KingsportMillEvacuationLogger)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2017-08-09T15:56:26.6229545-04:00 0HL6VC1BT5U3T [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2017-08-09T15:56:26.8004260-04:00 0HL6VC1BT5U3T [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2017-08-09T15:56:27.2536612-04:00 0HL6VC1BT5U3T [INF] Executed action "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Login (MichaelBrandonMorris.KingsportMillEvacuationLogger)" in 721.4648ms (afa2e885)
+2017-08-09T15:56:27.2967430-04:00 0HL6VC1BT5U3T [INF] Request finished in 755.2318ms 200 text/html; charset=utf-8 (15c52c40)
+2017-08-09T15:56:27.3047640-04:00 0HL6VC1BT5U3U [INF] Request starting HTTP/1.1 GET http://localhost:63653/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2017-08-09T15:56:27.3127853-04:00 0HL6VC1BT5U3V [INF] Request starting HTTP/1.1 GET http://localhost:63653/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2017-08-09T15:56:27.3508864-04:00 0HL6VC1BT5U3U [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2017-08-09T15:56:27.3558995-04:00 0HL6VC1BT5U3V [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2017-08-09T15:56:27.4208301-04:00 0HL6VC1BT5U3V [INF] Request finished in 107.067ms 304 application/javascript (15c52c40)
+2017-08-09T15:56:27.4579284-04:00 0HL6VC1BT5U3U [INF] Request finished in 155.4754ms 304 text/css (15c52c40)
+2017-08-09T15:56:37.5104986-04:00 0HL6VC1BT5U40 [INF] Request starting HTTP/1.1 GET http://localhost:63653/   (e5be5b71)
+2017-08-09T15:56:37.5225434-04:00 0HL6VC1BT5U40 [INF] Authorization failed for user: null. (a4ab1676)
+2017-08-09T15:56:37.5265460-04:00 0HL6VC1BT5U40 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2017-08-09T15:56:37.5315537-04:00 0HL6VC1BT5U40 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2017-08-09T15:56:37.5355650-04:00 0HL6VC1BT5U40 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2017-08-09T15:56:37.5656855-04:00 0HL6VC1BT5U40 [INF] Executed action "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.HomeController.Index (MichaelBrandonMorris.KingsportMillEvacuationLogger)" in 17.2155ms (afa2e885)
+2017-08-09T15:56:37.6007763-04:00 0HL6VC1BT5U41 [INF] Request starting HTTP/1.1 GET http://localhost:63653/Account/Login?ReturnUrl=%2F   (e5be5b71)
+2017-08-09T15:56:37.6027826-04:00 0HL6VC1BT5U40 [INF] Request finished in 78.9359ms 302  (15c52c40)
+2017-08-09T15:56:37.6388780-04:00 0HL6VC1BT5U41 [INF] Executing action method "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Login (MichaelBrandonMorris.KingsportMillEvacuationLogger)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2017-08-09T15:56:37.6629435-04:00 0HL6VC1BT5U41 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2017-08-09T15:56:37.6950274-04:00 0HL6VC1BT5U41 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2017-08-09T15:56:37.7742368-04:00 0HL6VC1BT5U41 [INF] Executed action "MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers.AccountController.Login (MichaelBrandonMorris.KingsportMillEvacuationLogger)" in 136.6809ms (afa2e885)
+2017-08-09T15:56:37.7892772-04:00 0HL6VC1BT5U41 [INF] Request finished in 206.8933ms 200 text/html; charset=utf-8 (15c52c40)

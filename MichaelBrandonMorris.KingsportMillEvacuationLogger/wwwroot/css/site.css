@@ -59,3 +59,7 @@ textarea {
 .bg-muted {
     background-color: #f7f7f7;
 }
+
+p.bg-danger, p.bg-info {
+    padding: 15px;
+}

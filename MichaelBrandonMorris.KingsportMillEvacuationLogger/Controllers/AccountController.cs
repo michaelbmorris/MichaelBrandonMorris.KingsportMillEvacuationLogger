@@ -116,13 +116,13 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             string userId,
             string code)
         {
-            if (userId == null
-                || code == null)
+            if (userId == null || code == null)
             {
                 return View("Error");
             }
 
             var user = await _userManager.FindByIdAsync(userId);
+
             if (user == null)
             {
                 return View("Error");
@@ -329,10 +329,12 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                     code
                 },
                 HttpContext.Request.Scheme);
+
             await _emailSender.SendEmailAsync(
                 model.Email,
                 "Reset Password",
                 $"Please reset your password by clicking here: <a href='{callbackUrl}'>link</a>");
+
             return View("ForgotPasswordConfirmation");
         }
 
@@ -380,6 +382,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
+
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -390,6 +393,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 model.Password,
                 model.RememberMe,
                 false);
+
             if (result.Succeeded)
             {
                 _logger.LogInformation(1, "User logged in.");

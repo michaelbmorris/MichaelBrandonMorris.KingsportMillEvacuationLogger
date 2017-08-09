@@ -15,10 +15,6 @@
     columns.Add(model => model.PhoneNumber).Titled("Phone Number");
 }).Filterable().Sortable().RowCss(model => model.Status == UserEvacuationStatus.Unknown ? "bg-warning" : model.Status == UserEvacuationStatus.Here ? "bg-success" : model.Status == UserEvacuationStatus.Away ? "bg-muted" : "bg-danger")
 
-<hr />
-<h2 class="text-danger">Danger</h2>
-<a asp-action="Reset" class="btn btn-danger form-control">Reset</a>
-
 <button class="btn btn-success form-control" id="refreshButton">Refresh</button>
 
 @section Scripts

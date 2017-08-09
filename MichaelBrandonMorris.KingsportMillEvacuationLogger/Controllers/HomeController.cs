@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
     ///     Class HomeController.
     /// </summary>
     /// <seealso cref="Controller" />
+    [Authorize(Roles = "Owner, Administrator, Security, Commander")]
     public class HomeController : Controller
     {
         /// <summary>
@@ -54,7 +56,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         {
             var model = (await UserManager.Users.ToListAsync())
                 .Where(user => user.IsActive)
-                .Select(user => new UserViewModel(user));
+                .Select(user => new UserViewModel(user, string.Empty));
 
             model = model.OrderBy(user => user.Status)
                 .ThenBy(user => user.Department)
@@ -64,6 +66,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             return View(model.ToList());
         }
 
+        [Authorize(Roles = "Owner, Administrator, Security")]
         [HttpGet]
         public ActionResult Reset()
         {
@@ -75,6 +78,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         /// </summary>
         /// <returns>Task&lt;ActionResult&gt;.</returns>
         /// TODO Edit XML Comment Template for Reset
+        [Authorize(Roles = "Owner, Administrator, Security")]
         [ActionName("Reset")]
         [HttpPost]
         public async Task<ActionResult> ResetConfirmed()
@@ -86,6 +90,11 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             }
 
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Admin()
+        {
+            return View();
         }
 
         /// <summary>

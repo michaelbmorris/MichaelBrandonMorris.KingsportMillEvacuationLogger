@@ -53,6 +53,9 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li>
+                            <a asp-action="Admin" asp-controller="Home">Admin</a>
+                        </li>
+                        <li>
                             <a aria-expanded="false"
                                aria-haspopup="true"
                                class="dropdown-toggle"
@@ -68,7 +71,8 @@
                                         Index
                                     </a>
                                 </li>
-                                <li class="divider" role="separator"></li>
+                                <li class="divider"
+                                    role="separator"></li>
                                 <li class="dropdown-header">Actions</li>
                                 <li>
                                     <a asp-action="Upload"
@@ -79,6 +83,7 @@
                             </ul>
                         </li>
                     </ul>
+                    @await Html.PartialAsync("_LoginPartial")
                 </div>
             }
         </div>

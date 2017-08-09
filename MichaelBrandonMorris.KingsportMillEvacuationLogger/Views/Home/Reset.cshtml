@@ -5,10 +5,10 @@
 
 <h2>Reset</h2>
 
-<p class="bg-danger">Are you sure you want to reset the evacuation log? This action cannot be undone.</p>
+<p class="bg-danger">DANGER! This will completely reset the evacuation log. All user statuses will be reset to default. This action cannot be undone.<br />Are you sure you want to proceed?</p>
 
 <form asp-action="Reset">
-    <input type="submit" class="btn btn-danger" value="Reset" />
+    <input type="submit" class="btn btn-danger" value="Yes, Reset All User Statuses" />
+    <a asp-action="Index" class="btn btn-primary">No, Cancel</a>
 </form>
 
-<a asp-action="Index" class="btn btn-primary">Cancel</a>

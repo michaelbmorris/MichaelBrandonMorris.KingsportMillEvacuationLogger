@@ -51,6 +51,18 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
             set;
         }
 
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is imported.
+        /// </summary>
+        /// <value><c>true</c> if this instance is imported; otherwise, <c>false</c>.</value>
+        /// TODO Edit XML Comment Template for IsImported
+        public bool IsImported
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         ///     Gets or sets the first name.
         /// </summary>

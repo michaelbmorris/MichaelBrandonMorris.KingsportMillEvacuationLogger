@@ -9,7 +9,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Data
     /// </summary>
     /// <seealso cref="Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{T}" />
     /// TODO Edit XML Comment Template for ApplicationDbContext
-    public class ApplicationDbContext : IdentityDbContext<User>
+    public class ApplicationDbContext : IdentityDbContext<User, Role, string>
     {
         /// <summary>
         ///     Initializes a new instance of the

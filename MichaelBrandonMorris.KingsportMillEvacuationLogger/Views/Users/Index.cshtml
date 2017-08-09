@@ -6,6 +6,9 @@
 
 <h2>@ViewData["Title"]</h2>
 
+<a asp-action="Delete" class="btn btn-danger">Delete</a>
+<a asp-action="Upload" class="btn btn-primary">Upload</a>
+
 @Html.Grid(Model).Build(columns =>
 {
     columns.Add(model => model.LastName).Titled("Last Name");
@@ -14,6 +17,7 @@
     columns.Add(model => model.IsActive).Titled("Is Active?");
     columns.Add(model => model.Email).Titled("Email");
     columns.Add(model => model.PhoneNumber).Titled("Phone Number");
+    columns.Add(model => model.RoleName).Titled("Role");
     columns.Add(model => $"<a class=\"btn btn-primary\" href=\"{Url.Action("Edit", new { id = model.Id })}\">Edit</a>").Encoded(false);
     columns.Add(model => $"<a class=\"btn btn-primary\" href=\"{Url.Action("ChangePassword", new { id = model.Id })}\">Change Password</a>").Encoded(false);
     columns.Add(model => $"<a class=\"btn btn-primary\" href=\"{Url.Action("ChangeRole", new { id = model.Id })}\">Change Role</a>").Encoded(false);

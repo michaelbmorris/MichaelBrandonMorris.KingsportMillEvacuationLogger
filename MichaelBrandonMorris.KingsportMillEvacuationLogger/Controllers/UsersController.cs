@@ -5,12 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Data;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Models;
-using MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.ManageViewModels
-    ;
+using MichaelBrandonMorris.KingsportMillEvacuationLogger.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
@@ -21,6 +22,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
     /// </summary>
     /// <seealso cref="Controller" />
     /// TODO Edit XML Comment Template for UsersController
+    [Authorize(Roles = "Owner, Administrator")]
     public class UsersController : Controller
     {
         /// <summary>
@@ -29,19 +31,25 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         /// </summary>
         /// <param name="db">The database.</param>
         /// <param name="activeDirectoryColumnMapping">
-        ///     The active
-        ///     directory column mapping.
+        ///     The active directory column mapping.
         /// </param>
         /// <param name="userManager">The user manager.</param>
+        /// <param name="emailSender">The email sender.</param>
+        /// <param name="logger"></param>
+        /// <param name="roleManager"></param>
         /// TODO Edit XML Comment Template for #ctor
         public UsersController(
-            ApplicationDbContext db,
             IOptions<ActiveDirectoryColumnMapping> activeDirectoryColumnMapping,
-            UserManager<User> userManager)
+            UserManager<User> userManager,
+            IEmailSender emailSender,
+            ILogger<UsersController> logger,
+            RoleManager<Role> roleManager)
         {
-            Db = db;
             ActiveDirectoryColumnMapping = activeDirectoryColumnMapping.Value;
             UserManager = userManager;
+            EmailSender = emailSender;
+            Logger = logger;
+            RoleManager = roleManager;
         }
 
         /// <summary>
@@ -54,12 +62,17 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             get;
         }
 
-        /// <summary>
-        ///     Gets the database.
-        /// </summary>
-        /// <value>The database.</value>
-        /// TODO Edit XML Comment Template for Db
-        private ApplicationDbContext Db
+        private IEmailSender EmailSender
+        {
+            get;
+        }
+
+        private ILogger Logger
+        {
+            get;
+        }
+
+        private RoleManager<Role> RoleManager
         {
             get;
         }
@@ -81,26 +94,39 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         /// <returns>Task&lt;ActionResult&gt;.</returns>
         /// TODO Edit XML Comment Template for ChangePassword
         [HttpGet]
-        public async Task<ActionResult> ChangePassword(string id)
+        public async Task<IActionResult> ChangePassword(string id)
         {
-            await Task.FromResult(0);
-            return null;
+            var user = await UserManager.FindByIdAsync(id);
+            var model = new ChangePasswordViewModel(user);
+            return View(model);
         }
 
         /// <summary>
         ///     Changes the password.
         /// </summary>
-        /// <param name="id">The identifier.</param>
         /// <param name="model">The model.</param>
         /// <returns>Task&lt;ActionResult&gt;.</returns>
         /// TODO Edit XML Comment Template for ChangePassword
         [HttpPost]
-        public async Task<ActionResult> ChangePassword(
-            string id,
+        public async Task<IActionResult> ChangePassword(
             ChangePasswordViewModel model)
         {
-            await Task.FromResult(0);
-            return null;
+            var user = await UserManager.FindByIdAsync(model.Id);
+
+            user.PasswordHash =
+                new PasswordHasher<User>().HashPassword(
+                    user,
+                    model.NewPassword);
+
+            await UserManager.UpdateAsync(user);
+            await EmailSender.SendEmailAsync(
+                user.Email,
+                "Password Reset",
+                "Your password has been changed for you by an administrator.<br />User name: "
+                + user.Email
+                + "<br />Password: "
+                + model.NewPassword);
+            return RedirectToAction("Index");
         }
 
         /// <summary>
@@ -110,25 +136,62 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         /// <returns>Task&lt;ActionResult&gt;.</returns>
         /// TODO Edit XML Comment Template for ChangeRole
         [HttpGet]
-        public async Task<ActionResult> ChangeRole(string id)
+        public async Task<IActionResult> ChangeRole(string id)
         {
-            await Task.FromResult(0);
-            return null;
+            var user = await UserManager.FindByIdAsync(id);
+            var roleNames = RoleManager.Roles.OrderBy(role => role.Index)
+                .Select(role => role.Name);
+            var model = new ChangeRoleViewModel(user, roleNames);
+            return View(model);
         }
 
         /// <summary>
         ///     Changes the role.
         /// </summary>
-        /// <param name="id">The identifier.</param>
+        /// <param name="model">The model.</param>
         /// <returns>Task&lt;ActionResult&gt;.</returns>
         /// TODO Edit XML Comment Template for ChangeRole
         [HttpPost]
-        public async Task<ActionResult> ChangeRole(
-            string id,
-            UserViewModel model)
+        public async Task<IActionResult> ChangeRole(ChangeRoleViewModel model)
         {
-            await Task.FromResult(0);
-            return null;
+            var user = await UserManager.FindByIdAsync(model.UserId);
+
+            foreach (var userRole in user.Roles)
+            {
+                var role = await RoleManager.FindByIdAsync(userRole.RoleId);
+
+                if (role.Name != model.RoleName)
+                {
+                    await UserManager.RemoveFromRoleAsync(user, role.Name);
+                }
+            }
+
+            await UserManager.AddToRoleAsync(user, model.RoleName);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete()
+        {
+            var model = (await UserManager.Users.ToListAsync())
+                .Where(user => user.Roles.Count == 0)
+                .OrderBy(user => user.LastName)
+                .ThenBy(user => user.FirstName)
+                .Select(user => new UserViewModel(user, string.Empty));
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(string[] userIds)
+        {
+            foreach (var userId in userIds)
+            {
+                var user = await UserManager.FindByIdAsync(userId);
+                await UserManager.DeleteAsync(user);
+            }
+
+            return RedirectToAction("Index");
         }
 
         /// <summary>
@@ -144,14 +207,14 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 return NotFound();
             }
 
-            var user = await Db.Users.SingleOrDefaultAsync(m => m.Id == id);
+            var user = await UserManager.FindByIdAsync(id);
 
             if (user == null)
             {
                 return NotFound();
             }
 
-            var model = new UserViewModel(user);
+            var model = new UserViewModel(user, string.Empty);
             return View(model);
         }
 
@@ -201,9 +264,22 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         /// TODO Edit XML Comment Template for Index
         public async Task<IActionResult> Index()
         {
-            var model =
-                (await Db.Users.ToListAsync()).Select(
-                    user => new UserViewModel(user));
+            var model = new List<UserViewModel>();
+
+            foreach (var user in await UserManager.Users.ToListAsync())
+            {
+                if (user.Roles == null
+                    || user.Roles.Count == 0)
+                {
+                    model.Add(new UserViewModel(user, string.Empty));
+                }
+                else
+                {
+                    var roleId = user.Roles.Single().RoleId;
+                    var role = await RoleManager.FindByIdAsync(roleId);
+                    model.Add(new UserViewModel(user, role.Name));
+                }
+            }
 
             return View(model);
         }
@@ -280,6 +356,8 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                         continue;
                     }
 
+                    Logger.LogInformation("Creating user " + email);
+
                     // The user does not exist and is active.
                     await UserManager.CreateAsync(
                         new User
@@ -288,14 +366,17 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                             Email = email,
                             FirstName = firstName,
                             IsActive = true,
+                            IsImported = true,
                             LastName = lastName,
-                            PhoneNumber = phoneNumber
+                            PhoneNumber = phoneNumber,
+                            UserName = email
                         });
                 }
                 else
                 {
                     // The user exists.
-                    if (!isActive && !user.IsActive)
+                    if (!isActive
+                        && !user.IsActive)
                     {
                         // The user exists and is not active in either the 
                         // database or Active Directory.
@@ -329,7 +410,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
 
         private bool UserExists(string id)
         {
-            return Db.Users.Any(e => e.Id == id);
+            return UserManager.FindByIdAsync(id) != null;
         }
     }
 }

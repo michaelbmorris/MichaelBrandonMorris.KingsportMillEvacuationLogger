@@ -1,45 +1,30 @@
 ﻿@model IList<UserViewModel>
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Kingsport Mill Evacuation Logger";
 }
 
-<h2>Evacuation Log</h2>
+<h2>@ViewData["Title"]</h2>
 
-@Html.Grid(Model).Build(columns =>
-{
-    columns.Add(model => model.Status).Titled("Status").RenderedAs(model => $"<label><input type=\"radio\" name=\"{model.Id}\" value=\"Here\"{(model.Status == UserEvacuationStatus.Here ? " checked" : "")}> Here</label> <label><input type=\"radio\" name=\"{model.Id}\" value=\"Away\"{(model.Status == UserEvacuationStatus.Away ? " checked" : "")}> Away</label> <label><input type=\"radio\" name=\"{model.Id}\" value=\"Missing\"{(model.Status == UserEvacuationStatus.Missing ? " checked" : "")}> Missing</label>").Encoded(false).Filterable(false).Sortable(false);
-    columns.Add(model => model.LastName).Titled("Last Name");
-    columns.Add(model => model.FirstName).Titled("First Name");
-    columns.Add(model => model.Department).Titled("Department");
-    columns.Add(model => model.PhoneNumber).Titled("Phone Number");
-}).Filterable().RowCss(model => model.Status == UserEvacuationStatus.Unknown ? "bg-warning" : model.Status == UserEvacuationStatus.Here ? "bg-success" : model.Status == UserEvacuationStatus.Away ? "bg-muted" : "bg-danger")
+<form asp-action="Index">
+    @Html.Grid(Model).Build(columns =>
+    {
+        var i = 0;
 
-<button class="btn btn-success form-control" id="refreshButton">Refresh</button>
-
-@section Scripts
-{
-    <script type="text/javascript">
-        $("input[type=\"radio\"]").click(function() {
-            $.ajax({
-                url: "@Url.Action("UpdateStatus")",
-                type: "POST",
-                data: {
-                    id: $(this).attr("name"),
-                    status: $(this).val()
-                },
-                failure: function (data) {
-                    if(data.failure) alert("Operation failed.");
-                }
-            });
-        });
-    </script>
+        columns.Add(model => model.Status).Titled("Status").RenderedAs(model =>
+        {
+            var id = $"<input type=\"hidden\" name=\"[{i}].Id\" value=\"{model.Id}\">";
+            var hereButton = $"<label class=\"radio-label\"><input type=\"radio\" name=\"[{i}].Status\" value=\"Here\"{(model.Status == UserEvacuationStatus.Here ? " checked" : "")}> Here</label>";
+            var awayButton = $"<label class=\"radio-label\"><input type=\"radio\" name=\"[{i}].Status\" value=\"Away\"{(model.Status == UserEvacuationStatus.Away ? " checked" : "")}> Away</label>";
+            var missingButton = $"<label class=\"radio-label\"><input type=\"radio\" name=\"[{i}].Status\" value=\"Missing\"{(model.Status == UserEvacuationStatus.Missing ? " checked" : "")}> Missing</label>";
+            i++;
+            return $"{id} {hereButton} {awayButton} {missingButton}";
+        }).Encoded(false);
+        columns.Add(model => model.LastName).Titled("Last Name");
+        columns.Add(model => model.FirstName).Titled("First Name");
+        columns.Add(model => model.Department).Titled("Department");
+        columns.Add(model => model.PhoneNumber).Titled("Phone Number");
+    }).Filterable().RowCss(model => model.Status == UserEvacuationStatus.Unknown ? "bg-warning" : model.Status == UserEvacuationStatus.Here ? "bg-success" : model.Status == UserEvacuationStatus.Away ? "bg-muted" : "bg-danger")
     
-    <script type="text/javascript">
-        $("#refreshButton").on('click', function () {
-            $('.mvc-grid').mvcgrid({
-                reload: true
-            });
-        })
-    </script>
-}
+    <input type="submit" value="Submit" class="btn btn-success" id="refreshButton"/>
+</form>

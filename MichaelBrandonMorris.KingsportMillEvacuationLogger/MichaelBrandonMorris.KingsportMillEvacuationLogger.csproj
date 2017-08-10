@@ -19,9 +19,14 @@
   <ItemGroup>
     <Content Include="wwwroot\css\MvcGrid\Fonts\GridGlyphs.woff" />
     <Content Include="wwwroot\css\MvcGrid\mvc-grid.css" />
+    <Content Include="wwwroot\css\site.min.css" />
     <Content Include="wwwroot\js\MvcGrid\mvc-grid.js" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="1.18.0" />
+    <PackageReference Include="MichaelBrandonMorris.Core.Extensions.Collection" Version="1.0.0" />
+    <PackageReference Include="MichaelBrandonMorris.Core.Extensions.List" Version="1.0.2" />
+    <PackageReference Include="MichaelBrandonMorris.Core.Extensions.String" Version="1.0.1" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.2" />
@@ -39,7 +44,6 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="NonFactors.Grid.Mvc6" Version="2.0.0" />
-    <PackageReference Include="Sendgrid" Version="9.5.2" />
     <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>

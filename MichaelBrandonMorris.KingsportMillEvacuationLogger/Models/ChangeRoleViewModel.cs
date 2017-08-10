@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
 {
@@ -62,6 +63,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
         /// </summary>
         /// <value>The name of the role.</value>
         /// TODO Edit XML Comment Template for RoleName
+        [Display(Name = "Role")]
         public string RoleName
         {
             get;

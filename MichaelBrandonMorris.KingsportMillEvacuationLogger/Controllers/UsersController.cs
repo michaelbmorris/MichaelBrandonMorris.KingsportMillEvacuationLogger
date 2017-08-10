@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using MichaelBrandonMorris.KingsportMillEvacuationLogger.Data;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Models;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -11,9 +10,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using MichaelBrandonMorris.Core.Extensions.Collection;
+using MichaelBrandonMorris.Core.Extensions.List;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
 {
@@ -29,26 +31,22 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         ///     Initializes a new instance of the
         ///     <see cref="UsersController" /> class.
         /// </summary>
-        /// <param name="db">The database.</param>
         /// <param name="activeDirectoryColumnMapping">
         ///     The active directory column mapping.
         /// </param>
         /// <param name="userManager">The user manager.</param>
         /// <param name="emailSender">The email sender.</param>
-        /// <param name="logger"></param>
         /// <param name="roleManager"></param>
         /// TODO Edit XML Comment Template for #ctor
         public UsersController(
             IOptions<ActiveDirectoryColumnMapping> activeDirectoryColumnMapping,
             UserManager<User> userManager,
             IEmailSender emailSender,
-            ILogger<UsersController> logger,
             RoleManager<Role> roleManager)
         {
             ActiveDirectoryColumnMapping = activeDirectoryColumnMapping.Value;
             UserManager = userManager;
             EmailSender = emailSender;
-            Logger = logger;
             RoleManager = roleManager;
         }
 
@@ -63,11 +61,6 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         }
 
         private IEmailSender EmailSender
-        {
-            get;
-        }
-
-        private ILogger Logger
         {
             get;
         }
@@ -119,13 +112,14 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                     model.NewPassword);
 
             await UserManager.UpdateAsync(user);
+
             await EmailSender.SendEmailAsync(
+                $"{user.FirstName} {user.LastName}",
                 user.Email,
                 "Password Reset",
-                "Your password has been changed for you by an administrator.<br />User name: "
-                + user.Email
-                + "<br />Password: "
-                + model.NewPassword);
+                $"Your password has been changed for you by an administrator.<br />User name: {user.Email}<br />Password: {model.NewPassword}",
+                $"Your password has been changed for you by an administrator.\nUser name: {user.Email}\nPassword: {model.NewPassword}");
+
             return RedirectToAction("Index");
         }
 
@@ -170,18 +164,41 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             return RedirectToAction("Index");
         }
 
+        /// <summary>
+        ///     Deletes this instance.
+        /// </summary>
+        /// <returns>Task&lt;IActionResult&gt;.</returns>
+        /// TODO Edit XML Comment Template for Delete
         [HttpGet]
         public async Task<IActionResult> Delete()
         {
-            var model = (await UserManager.Users.ToListAsync())
-                .Where(user => user.Roles.Count == 0)
-                .OrderBy(user => user.LastName)
-                .ThenBy(user => user.FirstName)
-                .Select(user => new UserViewModel(user, string.Empty));
+            var users = await UserManager.Users.Include(user => user.Roles).ToListAsync();
+            IList<UserViewModel> model = new List<UserViewModel>();
+            
+            foreach(var user in users)
+            {
+                var roleId = user.Roles.IsNullOrEmpty()
+                    ? null
+                    : user.Roles.Single().RoleId;
 
+                var role = await RoleManager.FindByIdAsync(roleId);
+
+                if(role == null || role.Name == "User")
+                {
+                    model.Add(new UserViewModel(user, string.Empty));
+                }
+            }
+
+            model = model.OrderBy(user => user.LastName, user => user.FirstName);
             return View(model);
         }
 
+        /// <summary>
+        ///     Deletes the specified user ids.
+        /// </summary>
+        /// <param name="userIds">The user ids.</param>
+        /// <returns>Task&lt;IActionResult&gt;.</returns>
+        /// TODO Edit XML Comment Template for Delete
         [HttpPost]
         public async Task<IActionResult> Delete(string[] userIds)
         {
@@ -207,16 +224,18 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 return NotFound();
             }
 
-            var user = await UserManager.FindByIdAsync(id);
+            var user = await UserManager.Users.Include(Roles).FirstOrDefaultAsync(u => u.Id == id);
 
             if (user == null)
             {
                 return NotFound();
             }
 
-            var model = new UserViewModel(user, string.Empty);
+            var model = new UserViewModel(user);
             return View(model);
         }
+
+        private Func<User, string, bool> IdEquals => (user, id) => user.Id == id;
 
         /// <summary>
         ///     Edits the specified identifier.
@@ -264,25 +283,12 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         /// TODO Edit XML Comment Template for Index
         public async Task<IActionResult> Index()
         {
-            var model = new List<UserViewModel>();
-
-            foreach (var user in await UserManager.Users.ToListAsync())
-            {
-                if (user.Roles == null
-                    || user.Roles.Count == 0)
-                {
-                    model.Add(new UserViewModel(user, string.Empty));
-                }
-                else
-                {
-                    var roleId = user.Roles.Single().RoleId;
-                    var role = await RoleManager.FindByIdAsync(roleId);
-                    model.Add(new UserViewModel(user, role.Name));
-                }
-            }
-
+            var users = await UserManager.Users.Include(Roles).ToListAsync();
+            var model = users.Select(user => new UserViewModel(user));
             return View(model);
         }
+
+        private Expression<Func<User, ICollection<IdentityUserRole<string>>>> Roles => user => user.Roles;
 
         /// <summary>
         ///     Uploads this instance.
@@ -306,6 +312,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         {
             if (file == null)
             {
+                ViewData["Error"] = "Select a file.";
                 return View();
             }
 
@@ -355,8 +362,6 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                         // TODO Log user not created.
                         continue;
                     }
-
-                    Logger.LogInformation("Creating user " + email);
 
                     // The user does not exist and is active.
                     await UserManager.CreateAsync(

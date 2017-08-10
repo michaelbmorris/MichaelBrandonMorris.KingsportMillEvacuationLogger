@@ -27,13 +27,23 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         }
 
         /// <summary>
-        /// Gets the user manager.
+        ///     Gets the user manager.
         /// </summary>
         /// <value>The user manager.</value>
         /// TODO Edit XML Comment Template for UserManager
         private UserManager<User> UserManager
         {
             get;
+        }
+
+        /// <summary>
+        ///     Admins this instance.
+        /// </summary>
+        /// <returns>ActionResult.</returns>
+        /// TODO Edit XML Comment Template for Admin
+        public ActionResult Admin()
+        {
+            return View();
         }
 
         /// <summary>
@@ -58,12 +68,43 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 .Where(user => user.IsActive)
                 .Select(user => new UserViewModel(user, string.Empty));
 
-            model = model.OrderBy(user => user.Status)
+            model = model
+                .OrderBy(user => UserEvacuationStatusMap.Map[user.Status])
                 .ThenBy(user => user.Department)
                 .ThenBy(user => user.LastName)
                 .ThenBy(user => user.FirstName);
 
             return View(model.ToList());
+        }
+
+        /// <summary>
+        ///     Indexes the specified model.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns>Task&lt;IActionResult&gt;.</returns>
+        /// TODO Edit XML Comment Template for Index
+        [HttpPost]
+        public async Task<IActionResult> Index(UserViewModel[] model)
+        {
+            foreach (var item in model)
+            {
+                if (item.Status == 0)
+                {
+                    continue;
+                }
+
+                var user = await UserManager.FindByIdAsync(item.Id);
+
+                if (user.Status == item.Status)
+                {
+                    continue;
+                }
+
+                user.Status = item.Status;
+                await UserManager.UpdateAsync(user);
+            }
+
+            return RedirectToAction(nameof(Index));
         }
 
         [Authorize(Roles = "Owner, Administrator, Security")]
@@ -74,7 +115,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         }
 
         /// <summary>
-        /// Resets this instance.
+        ///     Resets this instance.
         /// </summary>
         /// <returns>Task&lt;ActionResult&gt;.</returns>
         /// TODO Edit XML Comment Template for Reset
@@ -85,20 +126,20 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         {
             foreach (var user in await UserManager.Users.ToListAsync())
             {
-                user.Status = UserEvacuationStatus.Unknown;
+                if (user.Status == 0)
+                {
+                    continue;
+                }
+
+                user.Status = 0;
                 await UserManager.UpdateAsync(user);
             }
 
             return RedirectToAction("Index");
         }
 
-        public ActionResult Admin()
-        {
-            return View();
-        }
-
         /// <summary>
-        /// Updates the status.
+        ///     Updates the status.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <param name="status">The status.</param>

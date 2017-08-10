@@ -6,7 +6,6 @@ using MichaelBrandonMorris.KingsportMillEvacuationLogger.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -117,9 +116,11 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger
 
             services.AddMvc();
             services.AddMvcGrid();
-            services.AddTransient<IEmailSender, AuthMessageSender>();
-            services.AddTransient<ISmsSender, AuthMessageSender>();
-            services.Configure<AuthMessageSenderOptions>(Configuration);
+
+            services.Configure<SmtpOptions>(
+                Configuration.GetSection("SmtpOptions"));
+
+            services.AddTransient<IEmailSender, EmailSender>();
 
             services.Configure<ActiveDirectoryColumnMapping>(
                 Configuration.GetSection("ActiveDirectoryColumnMapping"));
@@ -149,7 +150,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger
                 "Owner"
             };
 
-            for(var i = 0; i < roleNames.Length; i++)
+            for (var i = 0; i < roleNames.Length; i++)
             {
                 if (!await roleManager.RoleExistsAsync(roleNames[i]))
                 {
@@ -265,8 +266,10 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger
                 await userManager.AddToRoleAsync(owner, "Owner");
 
                 await emailSender.SendEmailAsync(
+                    string.Empty,
                     owner.Email,
-                    "Password",
+                    "Password for Kingsport Mill Evacuation Logger",
+                    null,
                     passwordString);
             }
         }

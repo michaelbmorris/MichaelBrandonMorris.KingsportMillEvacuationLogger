@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Linq;
 
 namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
 {
@@ -23,8 +22,9 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
         ///     <see cref="UserViewModel" /> class.
         /// </summary>
         /// <param name="user">The user.</param>
+        /// <param name="roleName"></param>
         /// TODO Edit XML Comment Template for #ctor
-        public UserViewModel(User user, string roleName)
+        public UserViewModel(User user)
         {
             Department = user.Department;
             Email = user.Email;
@@ -43,12 +43,6 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
         /// <value>The department.</value>
         /// TODO Edit XML Comment Template for Department
         public string Department
-        {
-            get;
-            set;
-        }
-
-        public string RoleName
         {
             get;
             set;
@@ -139,6 +133,17 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
         /// TODO Edit XML Comment Template for PhoneNumber
         [Display(Name = "Phone Number")]
         public string PhoneNumber
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        ///     Gets or sets the name of the role.
+        /// </summary>
+        /// <value>The name of the role.</value>
+        /// TODO Edit XML Comment Template for RoleName
+        public string RoleName
         {
             get;
             set;

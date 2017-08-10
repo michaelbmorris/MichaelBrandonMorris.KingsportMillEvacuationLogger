@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Models;
 using MichaelBrandonMorris.KingsportMillEvacuationLogger.Models.
     AccountViewModels;
@@ -9,7 +6,6 @@ using MichaelBrandonMorris.KingsportMillEvacuationLogger.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
@@ -26,38 +22,47 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         /// <summary>
         ///     The email sender
         /// </summary>
-        /// TODO Edit XML Comment Template for _emailSender
-        private readonly IEmailSender _emailSender;
+        /// TODO Edit XML Comment Template for EmailSender
+        private IEmailSender EmailSender
+        {
+            get;
+        }
 
         /// <summary>
         ///     The external cookie scheme
         /// </summary>
-        /// TODO Edit XML Comment Template for _externalCookieScheme
-        private readonly string _externalCookieScheme;
+        /// TODO Edit XML Comment Template for ExternalCookieScheme
+        private string ExternalCookieScheme
+        {
+            get;
+        }
 
         /// <summary>
         ///     The logger
         /// </summary>
-        /// TODO Edit XML Comment Template for _logger
-        private readonly ILogger _logger;
+        /// TODO Edit XML Comment Template for Logger
+        private ILogger Logger
+        {
+            get;
+        }
 
         /// <summary>
         ///     The sign in manager
         /// </summary>
-        /// TODO Edit XML Comment Template for _signInManager
-        private readonly SignInManager<User> _signInManager;
-
-        /// <summary>
-        ///     The SMS sender
-        /// </summary>
-        /// TODO Edit XML Comment Template for _smsSender
-        private readonly ISmsSender _smsSender;
+        /// TODO Edit XML Comment Template for SignInManager
+        private SignInManager<User> SignInManager
+        {
+            get;
+        }
 
         /// <summary>
         ///     The user manager
         /// </summary>
-        /// TODO Edit XML Comment Template for _userManager
-        private readonly UserManager<User> _userManager;
+        /// TODO Edit XML Comment Template for UserManager
+        private UserManager<User> UserManager
+        {
+            get;
+        }
 
         /// <summary>
         ///     Initializes a new instance of the
@@ -70,7 +75,6 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         ///     options.
         /// </param>
         /// <param name="emailSender">The email sender.</param>
-        /// <param name="smsSender">The SMS sender.</param>
         /// <param name="loggerFactory">The logger factory.</param>
         /// TODO Edit XML Comment Template for #ctor
         public AccountController(
@@ -78,18 +82,16 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             SignInManager<User> signInManager,
             IOptions<IdentityCookieOptions> identityCookieOptions,
             IEmailSender emailSender,
-            ISmsSender smsSender,
             ILoggerFactory loggerFactory)
         {
-            _userManager = userManager;
-            _signInManager = signInManager;
+            UserManager = userManager;
+            SignInManager = signInManager;
 
-            _externalCookieScheme = identityCookieOptions.Value
+            ExternalCookieScheme = identityCookieOptions.Value
                 .ExternalCookieAuthenticationScheme;
 
-            _emailSender = emailSender;
-            _smsSender = smsSender;
-            _logger = loggerFactory.CreateLogger<AccountController>();
+            EmailSender = emailSender;
+            Logger = loggerFactory.CreateLogger<AccountController>();
         }
 
         /// <summary>
@@ -121,165 +123,15 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 return View("Error");
             }
 
-            var user = await _userManager.FindByIdAsync(userId);
+            var user = await UserManager.FindByIdAsync(userId);
 
             if (user == null)
             {
                 return View("Error");
             }
 
-            var result = await _userManager.ConfirmEmailAsync(user, code);
+            var result = await UserManager.ConfirmEmailAsync(user, code);
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
-        }
-
-        /// <summary>
-        ///     Externals the login.
-        /// </summary>
-        /// <param name="provider">The provider.</param>
-        /// <param name="returnUrl">The return URL.</param>
-        /// <returns>IActionResult.</returns>
-        /// TODO Edit XML Comment Template for ExternalLogin
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public IActionResult ExternalLogin(
-            string provider,
-            string returnUrl = null)
-        {
-            var redirectUrl = Url.Action(
-                nameof(ExternalLoginCallback),
-                "Account",
-                new
-                {
-                    ReturnUrl = returnUrl
-                });
-
-            var properties =
-                _signInManager.ConfigureExternalAuthenticationProperties(
-                    provider,
-                    redirectUrl);
-
-            return Challenge(properties, provider);
-        }
-
-        /// <summary>
-        ///     Externals the login callback.
-        /// </summary>
-        /// <param name="returnUrl">The return URL.</param>
-        /// <param name="remoteError">The remote error.</param>
-        /// <returns>Task&lt;IActionResult&gt;.</returns>
-        /// TODO Edit XML Comment Template for ExternalLoginCallback
-        [HttpGet]
-        [AllowAnonymous]
-        public async Task<IActionResult> ExternalLoginCallback(
-            string returnUrl = null,
-            string remoteError = null)
-        {
-            if (remoteError != null)
-            {
-                ModelState.AddModelError(
-                    string.Empty,
-                    $"Error from external provider: {remoteError}");
-                return View(nameof(Login));
-            }
-
-            var info = await _signInManager.GetExternalLoginInfoAsync();
-            if (info == null)
-            {
-                return RedirectToAction(nameof(Login));
-            }
-
-            var result = await _signInManager.ExternalLoginSignInAsync(
-                info.LoginProvider,
-                info.ProviderKey,
-                false);
-
-            if (result.Succeeded)
-            {
-                _logger.LogInformation(
-                    5,
-                    "User logged in with {Name} provider.",
-                    info.LoginProvider);
-                return RedirectToLocal(returnUrl);
-            }
-
-            if (result.RequiresTwoFactor)
-            {
-                return RedirectToAction(
-                    nameof(SendCode),
-                    new
-                    {
-                        ReturnUrl = returnUrl
-                    });
-            }
-
-            if (result.IsLockedOut)
-            {
-                return View("Lockout");
-            }
-
-            ViewData["ReturnUrl"] = returnUrl;
-            ViewData["LoginProvider"] = info.LoginProvider;
-            var email = info.Principal.FindFirstValue(ClaimTypes.Email);
-
-            return View(
-                "ExternalLoginConfirmation",
-                new ExternalLoginConfirmationViewModel
-                {
-                    Email = email
-                });
-        }
-
-        /// <summary>
-        ///     Externals the login confirmation.
-        /// </summary>
-        /// <param name="model">The model.</param>
-        /// <param name="returnUrl">The return URL.</param>
-        /// <returns>Task&lt;IActionResult&gt;.</returns>
-        /// TODO Edit XML Comment Template for ExternalLoginConfirmation
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ExternalLoginConfirmation(
-            ExternalLoginConfirmationViewModel model,
-            string returnUrl = null)
-        {
-            if (ModelState.IsValid)
-            {
-                var info = await _signInManager.GetExternalLoginInfoAsync();
-
-                if (info == null)
-                {
-                    return View("ExternalLoginFailure");
-                }
-
-                var user = new User
-                {
-                    UserName = model.Email,
-                    Email = model.Email
-                };
-
-                var result = await _userManager.CreateAsync(user);
-
-                if (result.Succeeded)
-                {
-                    result = await _userManager.AddLoginAsync(user, info);
-                    if (result.Succeeded)
-                    {
-                        await _signInManager.SignInAsync(user, false);
-                        _logger.LogInformation(
-                            6,
-                            "User created an account using {Name} provider.",
-                            info.LoginProvider);
-                        return RedirectToLocal(returnUrl);
-                    }
-                }
-
-                AddErrors(result);
-            }
-
-            ViewData["ReturnUrl"] = returnUrl;
-            return View(model);
         }
 
         /// <summary>
@@ -311,15 +163,15 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 return View(model);
             }
 
-            var user = await _userManager.FindByEmailAsync(model.Email);
+            var user = await UserManager.FindByEmailAsync(model.Email);
 
             if (user == null
-                || !await _userManager.IsEmailConfirmedAsync(user))
+                || !await UserManager.IsEmailConfirmedAsync(user))
             {
                 return View("ForgotPasswordConfirmation");
             }
 
-            var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var code = await UserManager.GeneratePasswordResetTokenAsync(user);
             var callbackUrl = Url.Action(
                 nameof(ResetPassword),
                 "Account",
@@ -330,10 +182,12 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 },
                 HttpContext.Request.Scheme);
 
-            await _emailSender.SendEmailAsync(
+            await EmailSender.SendEmailAsync(
+                string.Empty,
                 model.Email,
                 "Reset Password",
-                $"Please reset your password by clicking here: <a href='{callbackUrl}'>link</a>");
+                $"Please reset your password by clicking <a href='{callbackUrl}'>here</a>.",
+                $"Please reset your password by pasting the following link in your browser: {callbackUrl}");
 
             return View("ForgotPasswordConfirmation");
         }
@@ -361,7 +215,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         public async Task<IActionResult> Login(string returnUrl = null)
         {
             await HttpContext.Authentication
-                .SignOutAsync(_externalCookieScheme);
+                .SignOutAsync(ExternalCookieScheme);
 
             ViewData["ReturnUrl"] = returnUrl;
             return View();
@@ -388,7 +242,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 return View(model);
             }
 
-            var result = await _signInManager.PasswordSignInAsync(
+            var result = await SignInManager.PasswordSignInAsync(
                 model.Email,
                 model.Password,
                 model.RememberMe,
@@ -396,24 +250,13 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
 
             if (result.Succeeded)
             {
-                _logger.LogInformation(1, "User logged in.");
+                Logger.LogInformation(1, "User logged in.");
                 return RedirectToLocal(returnUrl);
-            }
-
-            if (result.RequiresTwoFactor)
-            {
-                return RedirectToAction(
-                    nameof(SendCode),
-                    new
-                    {
-                        ReturnUrl = returnUrl,
-                        model.RememberMe
-                    });
             }
 
             if (result.IsLockedOut)
             {
-                _logger.LogWarning(2, "User account locked out.");
+                Logger.LogWarning(2, "User account locked out.");
                 return View("Lockout");
             }
 
@@ -430,88 +273,9 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
-            await _signInManager.SignOutAsync();
-            _logger.LogInformation(4, "User logged out.");
+            await SignInManager.SignOutAsync();
+            Logger.LogInformation(4, "User logged out.");
             return RedirectToAction(nameof(HomeController.Index), "Home");
-        }
-
-        /// <summary>
-        ///     Registers the specified return URL.
-        /// </summary>
-        /// <param name="returnUrl">The return URL.</param>
-        /// <returns>IActionResult.</returns>
-        /// TODO Edit XML Comment Template for Register
-        [HttpGet]
-        [AllowAnonymous]
-        public IActionResult Register(string returnUrl = null)
-        {
-            ViewData["ReturnUrl"] = returnUrl;
-            return View();
-        }
-
-        /// <summary>
-        ///     Registers the specified model.
-        /// </summary>
-        /// <param name="model">The model.</param>
-        /// <param name="returnUrl">The return URL.</param>
-        /// <returns>Task&lt;IActionResult&gt;.</returns>
-        /// TODO Edit XML Comment Template for Register
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(
-            RegisterViewModel model,
-            string returnUrl = null)
-        {
-            ViewData["ReturnUrl"] = returnUrl;
-
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var user = new User
-            {
-                Department = model.Department,
-                FirstName = model.FirstName,
-                LastName = model.LastName,
-                PhoneNumber = model.PhoneNumber,
-                UserName = model.Email,
-                Email = model.Email
-            };
-
-            var result = await _userManager.CreateAsync(user, model.Password);
-
-            if (result.Succeeded)
-            {
-                var code = await _userManager
-                    .GenerateEmailConfirmationTokenAsync(user);
-
-                var callbackUrl = Url.Action(
-                    nameof(ConfirmEmail),
-                    "Account",
-                    new
-                    {
-                        userId = user.Id,
-                        code
-                    },
-                    HttpContext.Request.Scheme);
-
-                await _emailSender.SendEmailAsync(
-                    model.Email,
-                    "Confirm your account",
-                    $"Please confirm your account by clicking this link: <a href='{callbackUrl}'>link</a>");
-
-                _logger.LogInformation(
-                    3,
-                    "User created a new account with password.");
-
-                return RedirectToLocal(returnUrl);
-            }
-
-            AddErrors(result);
-
-            return View(model);
         }
 
         /// <summary>
@@ -544,7 +308,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 return View(model);
             }
 
-            var user = await _userManager.FindByEmailAsync(model.Email);
+            var user = await UserManager.FindByEmailAsync(model.Email);
 
             if (user == null)
             {
@@ -554,7 +318,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
             }
 
             var result =
-                await _userManager.ResetPasswordAsync(
+                await UserManager.ResetPasswordAsync(
                     user,
                     model.Code,
                     model.Password);
@@ -580,184 +344,6 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         public IActionResult ResetPasswordConfirmation()
         {
             return View();
-        }
-
-        /// <summary>
-        ///     Sends the code.
-        /// </summary>
-        /// <param name="returnUrl">The return URL.</param>
-        /// <param name="rememberMe">
-        ///     if set to <c>true</c> [remember
-        ///     me].
-        /// </param>
-        /// <returns>Task&lt;ActionResult&gt;.</returns>
-        /// TODO Edit XML Comment Template for SendCode
-        [HttpGet]
-        [AllowAnonymous]
-        public async Task<ActionResult> SendCode(
-            string returnUrl = null,
-            bool rememberMe = false)
-        {
-            var user =
-                await _signInManager.GetTwoFactorAuthenticationUserAsync();
-
-            if (user == null)
-            {
-                return View("Error");
-            }
-
-            var userFactors =
-                await _userManager.GetValidTwoFactorProvidersAsync(user);
-
-            var factorOptions = userFactors.Select(
-                    purpose => new SelectListItem
-                    {
-                        Text = purpose,
-                        Value = purpose
-                    })
-                .ToList();
-
-            return View(
-                new SendCodeViewModel
-                {
-                    Providers = factorOptions,
-                    ReturnUrl = returnUrl,
-                    RememberMe = rememberMe
-                });
-        }
-
-        /// <summary>
-        ///     Sends the code.
-        /// </summary>
-        /// <param name="model">The model.</param>
-        /// <returns>Task&lt;IActionResult&gt;.</returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
-        /// TODO Edit XML Comment Template for SendCode
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> SendCode(SendCodeViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
-
-            var user =
-                await _signInManager.GetTwoFactorAuthenticationUserAsync();
-            if (user == null)
-            {
-                return View("Error");
-            }
-
-            var code =
-                await _userManager.GenerateTwoFactorTokenAsync(
-                    user,
-                    model.SelectedProvider);
-
-            if (string.IsNullOrWhiteSpace(code))
-            {
-                return View("Error");
-            }
-
-            var message = "Your security code is: " + code;
-
-            switch (model.SelectedProvider)
-            {
-                case "Email":
-                    await _emailSender.SendEmailAsync(
-                        await _userManager.GetEmailAsync(user),
-                        "Security Code",
-                        message);
-                    break;
-                case "Phone":
-                    await _smsSender.SendSmsAsync(
-                        await _userManager.GetPhoneNumberAsync(user),
-                        message);
-                    break;
-                default: throw new ArgumentOutOfRangeException();
-            }
-
-            return RedirectToAction(
-                nameof(VerifyCode),
-                new
-                {
-                    Provider = model.SelectedProvider,
-                    model.ReturnUrl,
-                    model.RememberMe
-                });
-        }
-
-        /// <summary>
-        ///     Verifies the code.
-        /// </summary>
-        /// <param name="provider">The provider.</param>
-        /// <param name="rememberMe">
-        ///     if set to <c>true</c> [remember
-        ///     me].
-        /// </param>
-        /// <param name="returnUrl">The return URL.</param>
-        /// <returns>Task&lt;IActionResult&gt;.</returns>
-        /// TODO Edit XML Comment Template for VerifyCode
-        [HttpGet]
-        [AllowAnonymous]
-        public async Task<IActionResult> VerifyCode(
-            string provider,
-            bool rememberMe,
-            string returnUrl = null)
-        {
-            var user =
-                await _signInManager.GetTwoFactorAuthenticationUserAsync();
-
-            if (user == null)
-            {
-                return View("Error");
-            }
-
-            return View(
-                new VerifyCodeViewModel
-                {
-                    Provider = provider,
-                    ReturnUrl = returnUrl,
-                    RememberMe = rememberMe
-                });
-        }
-
-        /// <summary>
-        ///     Verifies the code.
-        /// </summary>
-        /// <param name="model">The model.</param>
-        /// <returns>Task&lt;IActionResult&gt;.</returns>
-        /// TODO Edit XML Comment Template for VerifyCode
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> VerifyCode(VerifyCodeViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var result = await _signInManager.TwoFactorSignInAsync(
-                model.Provider,
-                model.Code,
-                model.RememberMe,
-                model.RememberBrowser);
-
-            if (result.Succeeded)
-            {
-                return RedirectToLocal(model.ReturnUrl);
-            }
-
-            if (result.IsLockedOut)
-            {
-                _logger.LogWarning(7, "User account locked out.");
-                return View("Lockout");
-            }
-
-            ModelState.AddModelError(string.Empty, "Invalid code.");
-            return View(model);
         }
 
         #region Helpers

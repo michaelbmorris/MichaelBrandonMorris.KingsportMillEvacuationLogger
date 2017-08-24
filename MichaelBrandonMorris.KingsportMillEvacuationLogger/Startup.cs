@@ -60,7 +60,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger
         /// <param name="loggerFactory">The logger factory.</param>
         /// <param name="serviceProvider">The service provider.</param>
         /// TODO Edit XML Comment Template for Configure
-        public void Configure(
+        public async void Configure(
             IApplicationBuilder app,
             IHostingEnvironment env,
             ILoggerFactory loggerFactory,
@@ -92,7 +92,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger
                         "{controller=Home}/{action=Index}/{id?}");
                 });
 
-            CreateRolesAndUser(serviceProvider, loggerFactory).Wait();
+            await CreateRolesAndUser(serviceProvider, loggerFactory);
         }
 
         /// <summary>
@@ -247,16 +247,27 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger
                 var password = new char[8];
                 var random = new Random();
 
-                for (var i = 0; i < 8; i++)
+                for (var i = 0; i < 7; i++)
                 {
                     password[i] =
                         allowedChars[random.Next(allowedChars.Length)];
                 }
 
+                password[8] = '!';
+
                 var passwordString = new string(password);
 
                 logger.LogInformation("Owner password: " + passwordString);
-                await userManager.CreateAsync(owner, passwordString);
+                var result = await userManager.CreateAsync(owner, passwordString);
+
+                if (!result.Succeeded)
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        logger.LogCritical(error.Code + error.Description);
+                    }
+                }
+
                 owner = await userManager.FindByEmailAsync(owner.Email);
 
                 var token = await userManager

@@ -24,7 +24,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Models
         /// <param name="user">The user.</param>
         /// <param name="roleName"></param>
         /// TODO Edit XML Comment Template for #ctor
-        public UserViewModel(User user)
+        public UserViewModel(User user, string roleName)
         {
             Department = user.Department;
             Email = user.Email;

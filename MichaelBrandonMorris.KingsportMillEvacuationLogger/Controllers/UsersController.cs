@@ -231,7 +231,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
                 return NotFound();
             }
 
-            var model = new UserViewModel(user);
+            var model = new UserViewModel(user, string.Empty);
             return View(model);
         }
 
@@ -284,7 +284,7 @@ namespace MichaelBrandonMorris.KingsportMillEvacuationLogger.Controllers
         public async Task<IActionResult> Index()
         {
             var users = await UserManager.Users.Include(Roles).ToListAsync();
-            var model = users.Select(user => new UserViewModel(user));
+            var model = users.Select(user => new UserViewModel(user, string.Empty));
             return View(model);
         }
 

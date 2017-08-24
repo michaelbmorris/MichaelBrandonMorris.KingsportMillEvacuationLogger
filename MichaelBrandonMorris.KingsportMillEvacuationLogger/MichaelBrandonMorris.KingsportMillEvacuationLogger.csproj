@@ -17,12 +17,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\css\MvcGrid\Fonts\GridGlyphs.woff" />
-    <Content Include="wwwroot\css\MvcGrid\mvc-grid.css" />
-    <Content Include="wwwroot\css\site.min.css" />
-    <Content Include="wwwroot\js\MvcGrid\mvc-grid.js" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="MailKit" Version="1.18.0" />
     <PackageReference Include="MichaelBrandonMorris.Core.Extensions.Collection" Version="1.0.0" />
     <PackageReference Include="MichaelBrandonMorris.Core.Extensions.List" Version="1.0.2" />
